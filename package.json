@@ -1,0 +1,25 @@
+{
+  "name": "F&D",
+  "version": "0.1.0",
+  "description": "Furniture and Design",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "^2.3.1",
+    "express": "~4.9.x"
+  },
+  "engines": {
+    "node": "0.12.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MikeTYChen/FND"
+  },
+  "keywords": [
+    "furniture",
+    "design",
+    "crowdfund"
+  ]
+}
