@@ -1,4 +1,5 @@
-var express = require('express');
+var express = require('express'),
+	mongoose = require('mongoose');
 var app = express();
 
 app.set('port', (process.env.PORT || 5000));
@@ -6,7 +7,7 @@ app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
 // views is directory for all template files
-app.set('views', __dirname + '/views');
+app.set('views', __dirname + '/app');
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
