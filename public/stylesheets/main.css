@@ -61,12 +61,12 @@
 .signModal .modal-content {
   padding: 10px 30px; }
 
-.signModal .modal-md {
-  max-width: 600px; }
-
 .signModal .sign-text {
   text-align: center;
   font-weight: 400; }
+
+body .modal-dialog {
+  width: 25%; }
 
 body {
   padding-bottom: 20px; }

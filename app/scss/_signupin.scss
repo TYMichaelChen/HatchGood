@@ -2,11 +2,11 @@
 	.modal-content{
 		padding:10px 30px;
 	}
-	.modal-md{
-		max-width: 600px;
-	}
 	.sign-text{
 		text-align: center;
 		font-weight: 400;
 	}
+}
+body .modal-dialog{
+	width: 25%;
 }
