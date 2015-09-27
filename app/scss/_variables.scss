@@ -1,7 +1,12 @@
 $gray: rgb(230,230,230);
 $lt-gray: rgb(240,240,240);
+$d-gray: rgb(100,100,100);
+$white: #fff;
 $test: #3df;
 $test1: #000;
+
+$break-small: 700px;
+$break-large: 1200px;
 
 .bg-test{
 	background-color: $test;
