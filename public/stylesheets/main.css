@@ -57,6 +57,12 @@
     height: 100px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px; }
+  .hatch-container #howToHatch .design-imgbox {
+    background-color: #e6e6e6;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; }
 
 .loginSignModal {
   font-weight: 400; }
