@@ -25,7 +25,7 @@
 
 .jumbo-container {
   padding: 110px 0;
-  width: 80%;
+  width: 78%;
   margin: 0 auto; }
   .jumbo-container h2 {
     line-height: 1.5em; }
@@ -83,8 +83,21 @@ body .modal-dialog {
       width: 25%;
       margin-left: 37.5%; } }
 
-body {
-  padding-bottom: 20px; }
+.footer {
+  width: 100%;
+  padding: 30px 0 50px 0;
+  background-color: #646464; }
+  .footer .footer-container {
+    width: 80%; }
+  .footer .footer-links {
+    color: #fff;
+    display: block;
+    line-height: 1.8em; }
+  .footer .footer-social-box {
+    background-color: #e6e6e6;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px; }
 
 .fullpg-container {
   width: 98%;

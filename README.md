@@ -1,2 +1,2 @@
 # HatchGood
-<a href="https://Hatchgood.herokuapp.com" target="_blank">App Link</a>
+<a href="https://www.hatchgood.com" target="_blank">App Link</a>
