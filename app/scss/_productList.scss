@@ -1,0 +1,38 @@
+@import 'partials/hatchContainer';
+.product-container{
+	padding:120px 0 0;
+	width:100%;
+	margin:0 auto;
+	.sidebar-box{
+		width:25%;
+		margin:0 auto;
+		padding:50px;
+	}
+	.main-box{
+	}
+	.dropdown{
+		margin-bottom: 50px;
+		.drop-btn{
+			width:180px;
+			text-align: left;
+			.caret{
+				float:right;
+				margin-top:10px;
+			}
+		}
+		li{
+			a{
+				font-weight: 500;
+				text-decoration: none;
+			}
+		}
+		.sub-li{
+			a{
+				font-weight: 300;
+				color: $black;
+			}
+			list-style:none;
+		}
+	}
+
+}

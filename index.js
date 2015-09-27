@@ -13,7 +13,9 @@ app.set('view engine', 'ejs');
 app.get('/', function(request, response) {
   response.render('pages/index');
 });
-
+app.get('/product', function(request, response) {
+  response.render('pages/productList');
+});
 app.listen(app.get('port'), function() {
   console.log('Our app is running on port', app.get('port'));
 });

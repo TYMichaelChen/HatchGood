@@ -2,6 +2,7 @@ $gray: rgb(230,230,230);
 $lt-gray: rgb(240,240,240);
 $d-gray: rgb(100,100,100);
 $white: #fff;
+$black: #000;
 $test: #3df;
 $test1: #000;
 
@@ -10,4 +11,17 @@ $break-large: 1200px;
 
 .bg-test{
 	background-color: $test;
+}
+
+.bg-test1{
+	background-color: $test1;
+}
+.fullpg-container{
+	width:98%;
+	margin:0 auto;
+	padding-top:50px;
+}
+.btn-dark{
+	background-color: $d-gray;
+	color: $white;
 }
