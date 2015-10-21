@@ -77,5 +77,32 @@ body .modal-dialog {
     border-radius: 4px; }
 
 .sell-container {
-  width: 100%;
-  background-color: #3df; }
+  padding: 120px 0 120px 0;
+  width: 90%;
+  margin: 0 auto; }
+  .sell-container .sell-box {
+    padding: 10px 50px 50px 20px; }
+    .sell-container .sell-box .title {
+      text-align: center;
+      margin-bottom: 40px; }
+    .sell-container .sell-box .title-desc {
+      text-align: center; }
+    .sell-container .sell-box .form-group {
+      margin-top: 30px; }
+    .sell-container .sell-box .request-btn-box {
+      text-align: right;
+      margin-top: 20px; }
+    .sell-container .sell-box .upload-txt {
+      margin-top: 30px; }
+    .sell-container .sell-box .photo-box {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      height: 210px;
+      border: 1px solid black;
+      border-radius: 10px; }
+  .sell-container .why-box .title {
+    font-weight: 700;
+    line-height: 1.8em; }
+  .sell-container .why-box .perk {
+    line-height: 3em; }
