@@ -1,0 +1,23 @@
+#suggestInfo-container{
+	padding-top: $navbar-height;
+	.jumbotron{
+		padding:120px 0;
+		h2{
+			margin-bottom: 20px;
+		}
+		h4{
+			line-height: 0.8em;
+		}
+	}
+	.suggest-info-box{
+		padding:50px 0 100px 0;
+		width:50%;
+		margin:0 auto;		
+		.form-group{
+			margin-top: 25px;
+		}
+		.submit-btn-box{
+			text-align: right;
+		}
+	}
+}

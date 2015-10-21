@@ -19,6 +19,10 @@ app.get('/product', function(request, response) {
 app.get('/sell', function(request, response) {
   response.render('pages/sell');
 });
+
+app.get('/suggest/info', function(request, response) {
+  response.render('pages/suggestInfo');
+});
 app.listen(app.get('port'), function() {
   console.log('Our app is running on port', app.get('port'));
 });

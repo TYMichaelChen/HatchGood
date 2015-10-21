@@ -15,7 +15,8 @@
 
 /*Nav Styles*/
 .navbar {
-  background-color: #e6e6e6; }
+  background-color: #e6e6e6;
+  height: 50px; }
 
 .navbar-left {
   width: 25%; }
