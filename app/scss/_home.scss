@@ -9,18 +9,23 @@
 	#jumbo-btn{
 		padding-top: 30px;
 		.btn{
-			$padding: 50px;
-			padding-left: $padding;
-			padding-right: $padding;
+			padding:15px 10px;
 		}
 	}	
 }
 #howToHatch{
+	h5{
+		line-height: 1.2em;
+	}
 	.design-imgbox{
 		background-color: $gray;
 		margin:0 auto;
 		width:250px;
 		height:250px;	
 		border-radius: 50%;
+	}
+	.btn-box{
+		margin-top:30px;
+		text-align: center;
 	}
 }

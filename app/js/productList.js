@@ -5,6 +5,5 @@ $(function(){
        	caret = ' <span class="caret"></span>';
 		$("#"+selector+"-btn").html($(this).text()+caret);
 		$("#"+selector+"-btn").val($(this).text());
-
    });
 });
