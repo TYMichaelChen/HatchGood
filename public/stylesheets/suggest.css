@@ -77,6 +77,15 @@ body .modal-dialog {
     height: 50px;
     border-radius: 4px; }
 
+#suggest-container {
+  background-color: #3df;
+  padding-top: 50px; }
+  #suggest-container .jumbotron {
+    padding: 120px 0; }
+    #suggest-container .jumbotron h2 {
+      margin-bottom: 20px;
+      line-height: 1.5em; }
+
 #suggestInfo-container {
   padding-top: 50px; }
   #suggestInfo-container .jumbotron {

@@ -17,13 +17,16 @@ app.get('/product', function(request, response) {
   response.render('pages/productList');
 });
 app.get('/designer/:name', function(request, response) {
-  response.render('pages/designerPage');
+  response.render('pages/designer');
 });
 
 app.get('/sell', function(request, response) {
   response.render('pages/sell');
 });
 
+app.get('/suggest', function(request, response) {
+  response.render('pages/suggest');
+});
 app.get('/suggest/info', function(request, response) {
   response.render('pages/suggestInfo');
 });

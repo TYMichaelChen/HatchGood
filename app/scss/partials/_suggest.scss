@@ -1,0 +1,11 @@
+#suggest-container{
+	background-color: #3df;
+	padding-top: $navbar-height;
+	.jumbotron{
+		padding:120px 0;
+		h2{
+			margin-bottom: 20px;
+			line-height: 1.5em;
+		}
+	}
+}
