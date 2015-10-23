@@ -16,6 +16,10 @@ app.get('/', function(request, response) {
 app.get('/product', function(request, response) {
   response.render('pages/productList');
 });
+app.get('/designer/:name', function(request, response) {
+  response.render('pages/designerPage');
+});
+
 app.get('/sell', function(request, response) {
   response.render('pages/sell');
 });
