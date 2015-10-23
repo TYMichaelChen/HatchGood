@@ -85,6 +85,10 @@ body .modal-dialog {
     #suggest-container .jumbotron h2 {
       margin-bottom: 20px;
       line-height: 1.5em; }
+  #suggest-container .suggest-product-box {
+    background-color: #3df;
+    width: 100%;
+    padding: 40px 10%; }
 
 #suggestInfo-container {
   padding-top: 50px; }
