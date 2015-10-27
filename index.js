@@ -13,7 +13,10 @@ app.set('view engine', 'ejs');
 app.get('/', function(request, response) {
   response.render('pages/index');
 });
-app.get('/product', function(request, response) {
+app.get('/product/:name', function(request, response) {
+  response.render('pages/product');
+});
+app.get('/products', function(request, response) {
   response.render('pages/productList');
 });
 app.get('/designer/:name', function(request, response) {

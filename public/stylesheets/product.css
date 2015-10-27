@@ -15,7 +15,7 @@
 
 /*Nav Styles*/
 .navbar {
-  background-color: #e6e6e6;
+  background-color: #c8c8c8;
   height: 50px; }
 
 .navbar-left {
@@ -72,54 +72,84 @@ body .modal-dialog {
     display: block;
     line-height: 1.8em; }
   .footer .footer-social-box {
-    background-color: #e6e6e6;
+    background-color: #c8c8c8;
     width: 50px;
     height: 50px;
     border-radius: 4px; }
 
-.hatch-container {
-  width: 80%;
-  margin: 0 auto;
-  padding-bottom: 80px; }
-  .hatch-container .right {
-    margin-top: 10px; }
-  .hatch-container .seeall-text {
-    text-decoration: underline;
-    color: #000; }
-  .hatch-container .design-box {
-    margin-top: 30px; }
-  .hatch-container .design-imgbox {
-    background-color: #e6e6e6;
-    height: 200px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px; }
-  .hatch-container .design-subbox {
-    padding: 10px 20px;
-    height: 100px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px; }
-
-.product-container {
-  padding: 120px 0 0;
-  width: 100%;
-  margin: 0 auto; }
-  .product-container .sidebar-box {
-    width: 25%;
-    margin: 0 auto;
-    padding: 50px; }
-  .product-container .dropdown {
-    margin-bottom: 50px; }
-    .product-container .dropdown .drop-btn {
-      width: 180px;
-      text-align: left; }
-      .product-container .dropdown .drop-btn .caret {
-        float: right;
-        margin-top: 10px; }
-    .product-container .dropdown li a {
-      font-weight: 500;
-      text-decoration: none; }
-    .product-container .dropdown .sub-li {
-      list-style: none; }
-      .product-container .dropdown .sub-li a {
-        font-weight: 300;
-        color: #000; }
+#product-container {
+  padding: 50px;
+  margin-top: 50px; }
+  #product-container .content-box .gallery-box {
+    width: 98%;
+    height: 500px;
+    background-color: #c8c8c8;
+    margin-top: 50px; }
+  #product-container .content-box .nav-tab-box {
+    margin-top: 50px; }
+    #product-container .content-box .nav-tab-box .active {
+      text-decoration: underline; }
+  #product-container .content-box .more-info-box {
+    margin-top: 50px; }
+    #product-container .content-box .more-info-box .insta-box {
+      width: 95%;
+      margin: 0 auto;
+      height: 300px;
+      background-color: #c8c8c8; }
+  #product-container .info-box {
+    min-height: 250px;
+    right: 10px; }
+    #product-container .info-box .view-box {
+      padding: 10px 25px;
+      width: 100%;
+      border: 1px solid black;
+      border-radius: 5px; }
+    #product-container .info-box .content-box {
+      padding: 10px; }
+      #product-container .info-box .content-box .price-box {
+        margin-top: 10px;
+        text-align: right; }
+        #product-container .info-box .content-box .price-box .single-desc {
+          color: #c8c8c8; }
+        #product-container .info-box .content-box .price-box .single-txt {
+          color: #c8c8c8; }
+    #product-container .info-box .amount-box {
+      width: 100%;
+      height: 20px;
+      background-color: gray;
+      border-radius: 40px; }
+    #product-container .info-box .amount-desc-box .days-box {
+      text-align: right; }
+    #product-container .info-box .amount-desc-box .orders-txt {
+      color: #c8c8c8; }
+    #product-container .info-box .add-box .add-btn {
+      margin-top: 5px;
+      padding: 10px 20px;
+      color: #000;
+      background-color: white; }
+    #product-container .info-box .add-box .hatch-box {
+      text-align: right; }
+      #product-container .info-box .add-box .hatch-box .hatch-btn {
+        padding: 13px 12px;
+        color: #fff;
+        background-color: #646464; }
+    #product-container .info-box .shipping-box {
+      margin-top: 30px; }
+    #product-container .info-box .more-box {
+      margin-top: 30px; }
+      #product-container .info-box .more-box .product-box {
+        background-color: #c8c8c8;
+        width: 100%;
+        height: 80px;
+        border-radius: 5px; }
+  #product-container .like-box {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px; }
+    #product-container .like-box .design-box {
+      margin-top: 50px; }
+      #product-container .like-box .design-box .design-img {
+        width: 95%;
+        margin: 0 auto;
+        background-color: #c8c8c8;
+        height: 300px; }

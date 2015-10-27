@@ -1,0 +1,23 @@
+.content-box{
+	.gallery-box{
+		width:98%;
+		height:500px;
+		background-color: $gray;		
+		margin-top:50px;
+	}
+	.nav-tab-box{
+		margin-top:50px;
+		.active{
+			text-decoration: underline;
+		}
+	}
+	.more-info-box{
+		margin-top:50px;
+		.insta-box{
+			width:95%;
+			margin:0 auto;
+			height:300px;
+			background-color: $gray;
+		}
+	}
+}
