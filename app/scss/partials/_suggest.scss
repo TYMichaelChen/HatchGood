@@ -1,5 +1,4 @@
 #suggest-container{
-	background-color: #3df;
 	padding-top: $navbar-height;
 	.jumbotron{
 		padding:120px 0;
@@ -8,10 +7,43 @@
 			line-height: 1.5em;
 		}
 	}
-	.suggest-product-box{
-		background-color: #3df;
+	.suggest-product-container{
 		width:100%;
 		padding:40px 10%;
+		.top-bar{
+			margin:0; //fix
+			margin-bottom: 100px;
+			.make-btn{
+				padding-left: 20px;
+				padding-right: 20px;
+
+			}
+		}
+
+		.product-div{
+			width:100%;
+			background-color: $white;
+			margin:10px;
+			border:1px solid $gray;
+			.img-box{
+				height:200px;
+				width:95%;
+				margin:2.5% auto;
+				background-color: $gray;
+			}
+			.content-box{
+				padding:30px 10px;
+				.vote-btn{
+					padding:10px 20px;
+				}
+				.message-btn{
+					border:none;
+				}
+				.txt-box{
+					padding-left:20px;
+				}
+			}
+		}
 		
 	}
 }

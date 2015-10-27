@@ -78,17 +78,39 @@ body .modal-dialog {
     border-radius: 4px; }
 
 #suggest-container {
-  background-color: #3df;
   padding-top: 50px; }
   #suggest-container .jumbotron {
     padding: 120px 0; }
     #suggest-container .jumbotron h2 {
       margin-bottom: 20px;
       line-height: 1.5em; }
-  #suggest-container .suggest-product-box {
-    background-color: #3df;
+  #suggest-container .suggest-product-container {
     width: 100%;
     padding: 40px 10%; }
+    #suggest-container .suggest-product-container .top-bar {
+      margin: 0;
+      margin-bottom: 100px; }
+      #suggest-container .suggest-product-container .top-bar .make-btn {
+        padding-left: 20px;
+        padding-right: 20px; }
+    #suggest-container .suggest-product-container .product-div {
+      width: 100%;
+      background-color: #fff;
+      margin: 10px;
+      border: 1px solid #e6e6e6; }
+      #suggest-container .suggest-product-container .product-div .img-box {
+        height: 200px;
+        width: 95%;
+        margin: 2.5% auto;
+        background-color: #e6e6e6; }
+      #suggest-container .suggest-product-container .product-div .content-box {
+        padding: 30px 10px; }
+        #suggest-container .suggest-product-container .product-div .content-box .vote-btn {
+          padding: 10px 20px; }
+        #suggest-container .suggest-product-container .product-div .content-box .message-btn {
+          border: none; }
+        #suggest-container .suggest-product-container .product-div .content-box .txt-box {
+          padding-left: 20px; }
 
 #suggestInfo-container {
   padding-top: 50px; }
