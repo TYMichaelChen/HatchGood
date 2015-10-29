@@ -33,6 +33,9 @@ app.get('/suggest', function(request, response) {
 app.get('/suggest/info', function(request, response) {
   response.render('pages/suggestInfo');
 });
+app.get('*', function(request, response) {
+  response.render('pages/index');
+});
 app.listen(app.get('port'), function() {
   console.log('Our app is running on port', app.get('port'));
 });
