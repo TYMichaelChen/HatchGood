@@ -1,19 +1,13 @@
 body {
   font-family: 'Lato', sans-serif; }
 
-.bg-test {
-  background-color: #3df; }
-
-.bg-test1 {
-  background-color: #000; }
-
 .fullpg-container {
   width: 98%;
   margin: 0 auto;
   padding-top: 50px; }
 
 .btn-dark {
-  background-color: #646464;
+  background-color: #6D6E70;
   color: #fff; }
 
 .lato {
@@ -28,7 +22,7 @@ body {
 
 /*Nav Styles*/
 .navbar {
-  background-color: #c8c8c8;
+  background-color: #bbbdc0;
   height: 50px; }
 
 .navbar-left {
@@ -76,8 +70,8 @@ body .modal-dialog {
 
 .footer {
   width: 100%;
-  padding: 30px 0 50px 0;
-  background-color: #646464; }
+  padding: 80px 0 80px 0;
+  background-color: #6D6E70; }
   .footer .footer-container {
     width: 80%; }
   .footer .footer-links {
@@ -85,7 +79,7 @@ body .modal-dialog {
     display: block;
     line-height: 1.8em; }
   .footer .footer-social-box {
-    background-color: #c8c8c8;
+    background-color: #bbbdc0;
     width: 50px;
     height: 50px;
     border-radius: 4px; }
@@ -96,7 +90,7 @@ body .modal-dialog {
   #product-container .content-box .gallery-box {
     width: 98%;
     height: 500px;
-    background-color: #c8c8c8;
+    background-color: #bbbdc0;
     margin-top: 50px; }
   #product-container .content-box .nav-tab-box {
     margin-top: 50px; }
@@ -108,7 +102,7 @@ body .modal-dialog {
       width: 95%;
       margin: 0 auto;
       height: 300px;
-      background-color: #c8c8c8; }
+      background-color: #bbbdc0; }
   #product-container .info-box {
     min-height: 250px;
     right: 10px; }
@@ -123,9 +117,9 @@ body .modal-dialog {
         margin-top: 10px;
         text-align: right; }
         #product-container .info-box .content-box .price-box .single-desc {
-          color: #c8c8c8; }
+          color: #bbbdc0; }
         #product-container .info-box .content-box .price-box .single-txt {
-          color: #c8c8c8; }
+          color: #bbbdc0; }
     #product-container .info-box .amount-box {
       width: 100%;
       height: 20px;
@@ -134,7 +128,7 @@ body .modal-dialog {
     #product-container .info-box .amount-desc-box .days-box {
       text-align: right; }
     #product-container .info-box .amount-desc-box .orders-txt {
-      color: #c8c8c8; }
+      color: #bbbdc0; }
     #product-container .info-box .add-box .add-btn {
       margin-top: 5px;
       padding: 10px 20px;
@@ -145,13 +139,13 @@ body .modal-dialog {
       #product-container .info-box .add-box .hatch-box .hatch-btn {
         padding: 13px 12px;
         color: #fff;
-        background-color: #646464; }
+        background-color: #6D6E70; }
     #product-container .info-box .shipping-box {
       margin-top: 30px; }
     #product-container .info-box .more-box {
       margin-top: 30px; }
       #product-container .info-box .more-box .product-box {
-        background-color: #c8c8c8;
+        background-color: #bbbdc0;
         width: 100%;
         height: 80px;
         border-radius: 5px; }
@@ -164,5 +158,5 @@ body .modal-dialog {
       #product-container .like-box .design-box .design-img {
         width: 95%;
         margin: 0 auto;
-        background-color: #c8c8c8;
+        background-color: #bbbdc0;
         height: 300px; }

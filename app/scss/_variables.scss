@@ -1,25 +1,17 @@
-$gray: rgb(200,200,200);
-$lt-gray: rgb(240,240,240);
-$d-gray: rgb(100,100,100);
+$lt-gray: #e6e7e8;
+$gray: #bbbdc0;
+$d-gray: #6D6E70;
 $white: #fff;
 $black: #000;
-$test: #3df;
-$test1: #000;
-
-
+$prim-color:yellow;
+$sec-color:red;
 $navbar-height:50px;
 
 $break-small: 700px;
 $break-large: 1200px;
+
 body{
 	font-family: 'Lato', sans-serif;
-}
-.bg-test{
-	background-color: $test;
-}
-
-.bg-test1{
-	background-color: $test1;
 }
 .fullpg-container{
 	width:98%;
