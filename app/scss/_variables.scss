@@ -11,7 +11,9 @@ $navbar-height:50px;
 
 $break-small: 700px;
 $break-large: 1200px;
-
+body{
+	font-family: 'Lato', sans-serif;
+}
 .bg-test{
 	background-color: $test;
 }
@@ -27,4 +29,14 @@ $break-large: 1200px;
 .btn-dark{
 	background-color: $d-gray;
 	color: $white;
+}
+.lato{
+	font-family: 'Lato', sans-serif;
+}
+.playfair{
+	font-family: 'Playfair Display', serif;
+}
+.playfair-bold{
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
 }

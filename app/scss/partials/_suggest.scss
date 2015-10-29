@@ -2,7 +2,8 @@
 	padding-top: $navbar-height;
 	.jumbotron{
 		padding:120px 0;
-		h2{
+		.title-txt{
+			@extend .playfair;
 			margin-bottom: 20px;
 			line-height: 1.5em;
 		}

@@ -1,3 +1,6 @@
+body {
+  font-family: 'Lato', sans-serif; }
+
 .bg-test {
   background-color: #3df; }
 
@@ -12,6 +15,16 @@
 .btn-dark {
   background-color: #646464;
   color: #fff; }
+
+.lato {
+  font-family: 'Lato', sans-serif; }
+
+.playfair, #suggest-container .jumbotron .title-txt, #suggestInfo-container .jumbotron .title-txt {
+  font-family: 'Playfair Display', serif; }
+
+.playfair-bold {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700; }
 
 /*Nav Styles*/
 .navbar {
@@ -81,7 +94,7 @@ body .modal-dialog {
   padding-top: 50px; }
   #suggest-container .jumbotron {
     padding: 120px 0; }
-    #suggest-container .jumbotron h2 {
+    #suggest-container .jumbotron .title-txt {
       margin-bottom: 20px;
       line-height: 1.5em; }
   #suggest-container .suggest-product-container {
@@ -116,7 +129,7 @@ body .modal-dialog {
   padding-top: 50px; }
   #suggestInfo-container .jumbotron {
     padding: 120px 0; }
-    #suggestInfo-container .jumbotron h2 {
+    #suggestInfo-container .jumbotron .title-txt {
       margin-bottom: 20px; }
     #suggestInfo-container .jumbotron h4 {
       line-height: 0.8em; }

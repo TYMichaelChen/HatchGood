@@ -1,3 +1,6 @@
+body {
+  font-family: 'Lato', sans-serif; }
+
 .bg-test {
   background-color: #3df; }
 
@@ -12,6 +15,16 @@
 .btn-dark {
   background-color: #646464;
   color: #fff; }
+
+.lato {
+  font-family: 'Lato', sans-serif; }
+
+.playfair, .jumbo-container .title-txt {
+  font-family: 'Playfair Display', serif; }
+
+.playfair-bold {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700; }
 
 /*Nav Styles*/
 .navbar {
@@ -103,7 +116,7 @@ body .modal-dialog {
   padding: 110px 0;
   width: 78%;
   margin: 0 auto; }
-  .jumbo-container h2 {
+  .jumbo-container .title-txt {
     line-height: 1.5em; }
   .jumbo-container #jumbo-btn {
     padding-top: 30px; }

@@ -3,7 +3,8 @@
 	padding:110px 0;
 	width:78%;
 	margin:0 auto;
-	h2{
+	.title-txt{
+		@extend .playfair;
 		line-height: 1.5em;
 	}
 	#jumbo-btn{
