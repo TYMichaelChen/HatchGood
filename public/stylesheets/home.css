@@ -13,7 +13,7 @@ body {
 .lato {
   font-family: 'Lato', sans-serif; }
 
-.playfair, .jumbo-container .title-txt {
+.playfair, .navbar .navbar-brand, .jumbo-container .title-txt {
   font-family: 'Playfair Display', serif; }
 
 .playfair-bold {
@@ -106,10 +106,15 @@ body .modal-dialog {
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px; }
 
+.jumbotron {
+  background: url(../images/bg.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
 .jumbo-container {
   padding: 110px 0;
   width: 78%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
   .jumbo-container .title-txt {
     line-height: 1.5em; }
   .jumbo-container #jumbo-btn {

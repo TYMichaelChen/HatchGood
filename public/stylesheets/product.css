@@ -13,7 +13,7 @@ body {
 .lato {
   font-family: 'Lato', sans-serif; }
 
-.playfair {
+.playfair, .navbar .navbar-brand {
   font-family: 'Playfair Display', serif; }
 
 .playfair-bold {

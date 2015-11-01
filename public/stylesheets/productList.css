@@ -13,7 +13,7 @@ body {
 .lato {
   font-family: 'Lato', sans-serif; }
 
-.playfair {
+.playfair, .navbar .navbar-brand {
   font-family: 'Playfair Display', serif; }
 
 .playfair-bold {
@@ -109,7 +109,8 @@ body .modal-dialog {
 .product-container {
   padding: 120px 0 0;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #3df; }
   .product-container .sidebar-box {
     width: 25%;
     margin: 0 auto;

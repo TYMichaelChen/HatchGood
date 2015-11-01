@@ -1,8 +1,13 @@
 @import 'hatchContainer';
+.jumbotron{	
+	background: url(../images/bg.jpg) no-repeat center center fixed; 
+	background-size: cover;
+}
 .jumbo-container{
 	padding:110px 0;
 	width:78%;
 	margin:0 auto;
+	text-align:center;
 	.title-txt{
 		@extend .playfair;
 		line-height: 1.5em;

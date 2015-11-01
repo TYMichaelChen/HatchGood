@@ -2,6 +2,9 @@
 .navbar{
 	background-color: $gray;
 	height:$navbar-height;
+	.navbar-brand{
+		@extend .playfair;
+	}
 }
 
 .navbar-left{
