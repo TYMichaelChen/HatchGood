@@ -30,8 +30,8 @@ gulp.task('sass', function() {
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
     return gulp.src('app/js/*.js')
+        .pipe(gulp.dest('public/js'))
         .pipe(concat('all.js'))
-        // .pipe(gulp.dest('public/js'))
         .pipe(rename('all.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('public/js'));

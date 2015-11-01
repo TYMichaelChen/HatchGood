@@ -22,8 +22,16 @@ body {
 
 /*Nav Styles*/
 .navbar {
-  background-color: #bbbdc0;
-  height: 50px; }
+  background-color: #fff;
+  padding-top: 8px;
+  height: 66px; }
+  .navbar .navbar-brand {
+    color: #000; }
+  .navbar a {
+    color: #000; }
+  .navbar input {
+    border: 1px solid #000;
+    border-radius: 2px; }
 
 .navbar-left {
   width: 25%; }
@@ -80,6 +88,10 @@ body .modal-dialog {
     width: 50px;
     height: 50px;
     border-radius: 4px; }
+
+.btn {
+  border-radius: 2px;
+  padding: 12px 20px; }
 
 .sell-container {
   padding: 120px 0 120px 0;

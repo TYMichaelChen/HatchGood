@@ -22,8 +22,16 @@ body {
 
 /*Nav Styles*/
 .navbar {
-  background-color: #bbbdc0;
-  height: 50px; }
+  background-color: #fff;
+  padding-top: 8px;
+  height: 66px; }
+  .navbar .navbar-brand {
+    color: #000; }
+  .navbar a {
+    color: #000; }
+  .navbar input {
+    border: 1px solid #000;
+    border-radius: 2px; }
 
 .navbar-left {
   width: 25%; }
@@ -81,8 +89,12 @@ body .modal-dialog {
     height: 50px;
     border-radius: 4px; }
 
+.btn {
+  border-radius: 2px;
+  padding: 12px 20px; }
+
 #suggest-container {
-  padding-top: 50px; }
+  padding-top: 66px; }
   #suggest-container .jumbotron {
     padding: 120px 0; }
     #suggest-container .jumbotron .title-txt {
@@ -117,7 +129,7 @@ body .modal-dialog {
           padding-left: 20px; }
 
 #suggestInfo-container {
-  padding-top: 50px; }
+  padding-top: 66px; }
   #suggestInfo-container .jumbotron {
     padding: 120px 0; }
     #suggestInfo-container .jumbotron .title-txt {

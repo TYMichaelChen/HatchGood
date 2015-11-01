@@ -15,7 +15,15 @@
 	#jumbo-btn{
 		padding-top: 30px;
 		.btn{
-			padding:15px 10px;
+			border:$prim-color;			
+			background-color:$prim-color;
+			opacity:0.8;
+		}
+		.btn-1{
+			margin-right: 5px;
+		}
+		.btn-2{
+			margin-left: 5px;
 		}
 	}	
 }
@@ -33,5 +41,10 @@
 	.btn-box{
 		margin-top:30px;
 		text-align: center;
+		.btn{
+			background-color: $white;
+			border:1px solid $black;
+			color:$black;
+		}
 	}
 }

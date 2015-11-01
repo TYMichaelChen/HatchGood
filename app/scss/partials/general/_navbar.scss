@@ -1,9 +1,18 @@
 /*Nav Styles*/
 .navbar{
-	background-color: $gray;
+	background-color: $white;
+	padding-top: 8px;
 	height:$navbar-height;
 	.navbar-brand{
-		@extend .playfair;
+		@extend .playfair;	
+		color:$black;
+	}
+	a{
+		color:$black;
+	}
+	input{
+		border:1px solid $black;
+		border-radius: 2px;
 	}
 }
 
