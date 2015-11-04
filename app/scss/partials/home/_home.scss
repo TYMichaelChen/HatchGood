@@ -28,15 +28,18 @@
 	}	
 }
 #howToHatch{
-	h5{
-		line-height: 1.2em;
-	}
 	.design-imgbox{
 		background-color: $gray;
 		margin:0 auto;
-		width:250px;
-		height:250px;	
-		border-radius: 50%;
+		width:100%;
+		height:200px;	
+		border-radius: 5px;
+	}
+	.num-txt{
+		font-size: 25px;
+	}
+	.desc-txt{
+		line-height: 1.2em;
 	}
 	.btn-box{
 		margin-top:30px;

@@ -14,14 +14,29 @@
 	}
 	.design-imgbox{
 		background-color: $gray;
+		width:95%;
+		margin:0 auto;
 		height:200px;	
 		border-top-left-radius: 4px;
 		border-top-right-radius: 4px;
 	}
 	.design-subbox{
-		padding:10px 20px;
+		padding:10px 30px;
 		height:100px;	
 		border-bottom-left-radius: 4px;
 		border-bottom-right-radius: 4px;
+		.design-title{
+			line-height: 0.1em;
+		}
+		.design-author{
+			line-height: 0.1em;
+			color:$gray;
+			a{
+				color:$gray;
+			}
+		}
+		.design-price{
+			line-height: 0.1em;
+		}
 	}
 }
