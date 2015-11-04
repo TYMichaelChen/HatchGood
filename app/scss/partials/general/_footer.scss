@@ -1,19 +1,20 @@
 .footer{
 	width:100%;
 	padding:80px 0 80px 0;
-	background-color: $d-gray;
+	background-color: $gray;
 	.footer-container{
 		width:80%;
 	}
 	.footer-links{
-		color:$white;
+		color:$black;
 		display: block;
 		line-height: 1.8em;
 	}
 	.footer-social-box{
-		background-color: $gray;
-		width:50px;
-		height:50px;	
-		border-radius: 4px;
+		text-align: center;
+	}
+	.footer-social{
+		color:$d-gray;
+		font-size:30px;
 	}
 }

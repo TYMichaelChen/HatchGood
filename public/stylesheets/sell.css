@@ -76,18 +76,18 @@ body .modal-dialog {
 .footer {
   width: 100%;
   padding: 80px 0 80px 0;
-  background-color: #6D6E70; }
+  background-color: #bbbdc0; }
   .footer .footer-container {
     width: 80%; }
   .footer .footer-links {
-    color: #fff;
+    color: #000;
     display: block;
     line-height: 1.8em; }
   .footer .footer-social-box {
-    background-color: #bbbdc0;
-    width: 50px;
-    height: 50px;
-    border-radius: 4px; }
+    text-align: center; }
+  .footer .footer-social {
+    color: #6D6E70;
+    font-size: 30px; }
 
 .btn {
   border-radius: 2px;
