@@ -5,14 +5,25 @@
 	}
 	.sign-text{
 		text-align: center;
+		color:$d-gray;
 	}
 	.forgot-text{
 		text-align: right;
 		font-size: 0.8em;
 	}	
 	.reset-text{
-		font-weight: 300;
 		font-size: 1em;
+	}
+	.reset-btn-box{
+		text-align: center;
+	}
+	.btn-dark{
+		margin:0 auto;
+		color:$white;
+	}
+	a{
+		color:$black;
+		font-weight: 700;
 	}
 }
 body .modal-dialog{
