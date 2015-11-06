@@ -1,24 +1,29 @@
 #suggestInfo-container{
 	padding-top: $navbar-height;
 	.jumbotron{
-		padding:120px 0;
+		padding:150px 0;
+		text-align: center;
 		.title-txt{
 			@extend .playfair;
 			margin-bottom: 20px;
-		}
-		h4{
-			line-height: 0.8em;
 		}
 	}
 	.suggest-info-box{
 		padding:50px 0 100px 0;
 		width:50%;
-		margin:0 auto;		
+		margin:0 auto;	
+		.suggest-desc-text{
+			margin-bottom: 50px;
+		}	
 		.form-group{
-			margin-top: 25px;
+			margin-top: 15px;
 		}
 		.submit-btn-box{
+			margin-top:30px;
 			text-align: right;
+			.submit-btn{
+				background-color:$black;
+			}
 		}
 	}
 }

@@ -142,16 +142,20 @@ body .modal-dialog {
 #suggestInfo-container {
   padding-top: 66px; }
   #suggestInfo-container .jumbotron {
-    padding: 120px 0; }
+    padding: 150px 0;
+    text-align: center; }
     #suggestInfo-container .jumbotron .title-txt {
       margin-bottom: 20px; }
-    #suggestInfo-container .jumbotron h4 {
-      line-height: 0.8em; }
   #suggestInfo-container .suggest-info-box {
     padding: 50px 0 100px 0;
     width: 50%;
     margin: 0 auto; }
+    #suggestInfo-container .suggest-info-box .suggest-desc-text {
+      margin-bottom: 50px; }
     #suggestInfo-container .suggest-info-box .form-group {
-      margin-top: 25px; }
+      margin-top: 15px; }
     #suggestInfo-container .suggest-info-box .submit-btn-box {
+      margin-top: 30px;
       text-align: right; }
+      #suggestInfo-container .suggest-info-box .submit-btn-box .submit-btn {
+        background-color: #000; }
