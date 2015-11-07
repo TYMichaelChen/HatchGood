@@ -4,7 +4,7 @@
   "description": "Furniture and Design",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "ejs": "^2.3.1",

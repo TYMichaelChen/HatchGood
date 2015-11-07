@@ -18,30 +18,30 @@ gulp.task('lint', function() {
 
 // Compile Our Sass
 gulp.task('sass', function() {
-    return gulp.src('app/scss/*.scss')
+    return gulp.src('public/src/scss/*.scss')
         .pipe(sass())
         .pipe(autoprefixer('last 2 version'))
-        .pipe(gulp.dest('public/stylesheets'))
+        .pipe(gulp.dest('public/dist/stylesheets'))
         .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
-        .pipe(gulp.dest('public/stylesheets/min'));
+        .pipe(gulp.dest('public/dist/stylesheets/min'));
 });
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
-    return gulp.src('app/js/*.js')
-        .pipe(gulp.dest('public/js'))
+    return gulp.src('public/src/js/*.js')
+        .pipe(gulp.dest('public/dist/js'))
         .pipe(concat('all.js'))
         .pipe(rename('all.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('public/js'));
+        .pipe(gulp.dest('public/dist/js'));
 });
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch('app/js/*.js', ['lint', 'scripts']);
-    gulp.watch('app/scss/*.scss', ['sass']);
-    gulp.watch('app/scss/partials/**/*.scss', ['sass']);
+    gulp.watch('public/src/js/*.js', ['lint', 'scripts']);
+    gulp.watch('public/src/scss/*.scss', ['sass']);
+    gulp.watch('public/src/scss/partials/**/*.scss', ['sass']);
 });
 
 // Default Task
