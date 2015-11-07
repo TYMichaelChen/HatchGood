@@ -1,0 +1,38 @@
+@import 'partials/general/base';
+
+#howworks-container{
+	margin:$navbar-height auto 0 auto;	
+	padding: 80px 0 150px 0;
+	width:85%;
+	.hatch-txt{
+		font-size: 22px;
+	}
+	.toggle-box{
+		text-align: center;
+		.btn-toggle{
+			padding:10px 30px;
+		}
+		.toggle-active{
+			background-color:$black;
+			color:$white;
+			border:1px solid $black;
+		}
+	}
+	.new-design-box{
+		margin-top:50px;		
+		.design-box{
+			margin-top: 30px;
+		}
+		.design-imgbox{
+			background-color: $gray;
+			width:100%;
+			margin:0 auto;
+			height:200px;	
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+		}
+		.text-box{
+			margin-top:30px;
+		}
+	}
+}

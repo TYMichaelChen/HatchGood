@@ -39,6 +39,9 @@ app.get('/contact', function(request, response) {
 app.get('/team', function(request, response) {
   response.render('pages/team');
 });
+app.get('/how', function(request, response) {
+  response.render('pages/howItWorks');
+});
 app.get('*', function(request, response) {
   response.render('pages/index');
 });
