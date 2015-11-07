@@ -24,7 +24,8 @@ body {
 .navbar {
   background-color: #fff;
   padding-top: 8px;
-  height: 66px; }
+  height: 66px;
+  border-bottom: 5px solid #fbc32e; }
   .navbar .navbar-brand {
     color: #000; }
   .navbar a {

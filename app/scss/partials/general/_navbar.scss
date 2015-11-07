@@ -3,6 +3,7 @@
 	background-color: $white;
 	padding-top: 8px;
 	height:$navbar-height;
+	border-bottom:5px solid $prim-color;
 	.navbar-brand{
 		@extend .playfair;	
 		color:$black;
