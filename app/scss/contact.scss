@@ -1,0 +1,20 @@
+@import 'partials/general/base';
+
+#contact-container{
+	padding:80px 0 180px 0;
+	margin:$navbar-height auto 0 auto;	
+	width:75%;
+	.question-input{
+		margin-top: 20px;
+	}
+	.ask-box{
+		margin-top: 20px;
+		text-align: right;
+		.ask-btn{
+			padding:10px 30px;
+			background-color:$d-gray;
+			border:1px solid $d-gray;
+			color:$white;
+		}
+	}
+}
