@@ -33,6 +33,12 @@ app.get('/suggest', function(request, response) {
 app.get('/suggest/info', function(request, response) {
   response.render('pages/suggestInfo');
 });
+app.get('/contact', function(request, response) {
+  response.render('pages/contact');
+});
+app.get('/team', function(request, response) {
+  response.render('pages/team');
+});
 app.get('*', function(request, response) {
   response.render('pages/index');
 });
