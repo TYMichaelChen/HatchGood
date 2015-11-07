@@ -8,6 +8,12 @@ body {
 
 .btn-dark {
   background-color: #6D6E70;
+  border: 1px solid #6D6E70;
+  color: #fff; }
+
+.btn-black {
+  background-color: #000;
+  border: 1px solid #000;
   color: #fff; }
 
 .lato {
@@ -108,7 +114,8 @@ body .modal-dialog {
 #suggest-container {
   padding-top: 66px; }
   #suggest-container .jumbotron {
-    padding: 120px 0; }
+    padding: 120px 0;
+    text-align: center; }
     #suggest-container .jumbotron .title-txt {
       margin-bottom: 20px;
       line-height: 1.5em; }
@@ -117,10 +124,15 @@ body .modal-dialog {
     padding: 40px 10%; }
     #suggest-container .suggest-product-container .top-bar {
       margin: 0;
-      margin-bottom: 100px; }
-      #suggest-container .suggest-product-container .top-bar .make-btn {
-        padding-left: 20px;
-        padding-right: 20px; }
+      margin-bottom: 100px;
+      padding: 0; }
+      #suggest-container .suggest-product-container .top-bar .sort-txt {
+        margin-right: 50px; }
+      #suggest-container .suggest-product-container .top-bar .suggest-box {
+        text-align: right; }
+        #suggest-container .suggest-product-container .top-bar .suggest-box .make-btn {
+          padding-left: 20px;
+          padding-right: 20px; }
     #suggest-container .suggest-product-container .product-div {
       width: 100%;
       background-color: #fff;
@@ -152,6 +164,7 @@ body .modal-dialog {
     width: 50%;
     margin: 0 auto; }
     #suggestInfo-container .suggest-info-box .suggest-desc-text {
+      font-size: 16px;
       margin-bottom: 50px; }
     #suggestInfo-container .suggest-info-box .form-group {
       margin-top: 15px; }

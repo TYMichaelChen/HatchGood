@@ -2,6 +2,7 @@
 	padding-top: $navbar-height;
 	.jumbotron{
 		padding:120px 0;
+		text-align: center;
 		.title-txt{
 			@extend .playfair;
 			margin-bottom: 20px;
@@ -14,10 +15,16 @@
 		.top-bar{
 			margin:0; //fix
 			margin-bottom: 100px;
-			.make-btn{
-				padding-left: 20px;
-				padding-right: 20px;
-
+			padding:0;
+			.sort-txt{
+				margin-right:50px;
+			}
+			.suggest-box{
+				text-align: right;
+				.make-btn{
+					padding-left: 20px;
+					padding-right: 20px;
+				}
 			}
 		}
 

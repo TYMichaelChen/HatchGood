@@ -21,6 +21,12 @@ body{
 }
 .btn-dark{
 	background-color: $d-gray;
+	border:1px solid $d-gray;
+	color: $white;
+}
+.btn-black{
+	background-color: $black;
+	border:1px solid $black;
 	color: $white;
 }
 .lato{

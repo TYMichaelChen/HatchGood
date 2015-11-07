@@ -8,6 +8,12 @@ body {
 
 .btn-dark {
   background-color: #6D6E70;
+  border: 1px solid #6D6E70;
+  color: #fff; }
+
+.btn-black {
+  background-color: #000;
+  border: 1px solid #000;
   color: #fff; }
 
 .lato {
