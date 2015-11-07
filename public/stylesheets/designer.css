@@ -131,8 +131,9 @@ body .modal-dialog {
         float: left;
         width: 20px;
         height: 20px;
-        background-color: #bbbdc0;
         margin: 5px 2px; }
+        #designerPage-container .designer-about-box .social-media-box .social-icon .designer-social {
+          font-size: 14px; }
     #designerPage-container .designer-about-box .designer-bio {
       margin-top: 40px; }
     #designerPage-container .designer-about-box .review-box {
