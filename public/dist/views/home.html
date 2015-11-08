@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hatch Good</title>
+<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href="/stylesheets/flaticon.css" rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" type="text/css" href="/stylesheets/home.css" />
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Hatch Good</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+    	<form class="navbar-form navbar-left">
+	        <input type="text" class="nav-search" placeholder="Search Goods">
+		</form>
+		<ul class="nav navbar-nav">
+			<li><a href="/product/chair">Shop</a></li>
+			<li><a href="/sell">Sell</a></li>
+			<li><a href="/suggest">Suggest</a></li>
+			<li><a href="/how">How It Works</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#loginModal">Log In</a></li>
+		</ul>
+      
+    </div>
+  </div>
+</nav>
+
+<div id="signupModal" class="modal fade loginSignModal" tabindex="-1" role="dialog" aria-labelledby="signupModal">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+		<div class="row">
+			<div class="col-sm-12">
+				<h4>Sign Up</h4>
+			</div>
+		</div>
+		<form class="form-horizontal">
+			<div class="form-group">
+				<div class="col-sm-6">
+					<input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+				</div>
+				<div class="col-sm-6">
+					<input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<input type="password" class="form-control" id="confirmPassword" placeholder="Re-Enter Password">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<button type="submit" class="btn btn-default btn-block">Sign me up!</button>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<h5 class="sign-text">Or</h5>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<button type="submit" class="btn btn-default btn-block">Login with Facebook</button>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<h5 class="sign-text">Already have an account? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">Log In</a></h5>
+				</div>
+			</div>
+		</form>
+    </div>
+  </div>
+</div>
+<div id="loginModal" class="modal fade loginSignModal" tabindex="-1" role="dialog" aria-labelledby="loginModal">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+		<div class="row">
+			<div class="col-sm-12">
+				<h4>Log In</h4>
+			</div>
+		</div>
+		<form class="form-horizontal">
+			<div class="form-group">
+				<div class="col-sm-12">
+					<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<h6 class="forgot-text"><a href="#" data-dismiss="modal" data-toggle="modal" data-target="#forgotModal">Forgot Password?</a></h6>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<button type="submit" class="btn btn-default btn-block">Log In</button>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<h5 class="sign-text">Or</h5>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<button type="submit" class="btn btn-default btn-block">Login with Facebook</button>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<h5 class="sign-text">Don't have an account? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signupModal">Sign Up</a></h5>
+				</div>
+			</div>
+		</form>
+    </div>
+  </div>
+</div>
+<div id="forgotModal" class="modal fade loginSignModal" tabindex="-1" role="dialog" aria-labelledby="forgotModal">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+		<div class="row">
+			<div class="col-sm-12">
+				<h4>Forgot Password?</h4>
+			</div>
+		</div>
+		<form class="form-horizontal">
+			<div class="form-group">
+				<div class="col-sm-12">
+					<h5 class="reset-text">Type in the email associated to your account. We will send an email to reset your password</h5>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+				</div>
+			</div>
+			<div class="form-group">
+					<div class="col-sm-12 reset-btn-box">
+						<button type="submit" class="btn btn-dark">Confirm</button>
+					</div>
+			</div>
+		</form>
+    </div>
+  </div>
+</div>
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+	<div class="container jumbo-container">
+		<h2 class="title-txt">We make designer goods accessible.</h2>
+		<p id="jumbo-btn">
+			<a class="btn btn-primary btn-lg btn-1" href="#" role="button">Shop Hatch Good</a>
+			<a class="btn btn-primary btn-lg btn-2" href="#" role="button">Hatch My Design</a>
+		</p>
+	</div>
+</div>
+	<div class="container hatch-container">
+	<div id="howToHatch">
+		<div class="row">
+			<div class="col-sm-12">
+				<h4>How Does Hatch Work?</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="design-box">
+					<div class="design-imgbox">
+					</div>
+				</div>
+				<span class="num-txt">1</span>
+				<h5 class="desc-txt">We first collaborate with our designers to insure quality and timely distribution of the product.</h5>
+			</div>
+			<div class="col-sm-3">
+				<div class="design-box">
+					<div class="design-imgbox">
+					</div>
+				</div>
+				<span class="num-txt">2</span>
+				<h5 class="desc-txt">Once the product passes quality control, it becomes available on the designer's page to begin filling the first batch of order.</h5>
+			</div>
+			<div class="col-sm-3">
+				<div class="design-box">
+					<div class="design-imgbox">
+					</div>
+				</div>
+				<span class="num-txt">3</span>
+				<h5 class="desc-txt">Our community of design enthusiasts join to hatch the product. However, if the required number of orders are not met for that batch, the product cannot be hatched.*</h5>
+			</div>
+			<div class="col-sm-3">
+				<div class="design-box">
+					<div class="design-imgbox">
+					</div>
+				</div>
+				<span class="num-txt">4</span>
+				<h5 class="desc-txt">When the required number of orders are met for the first batch, the next batch opens up for orders while our designers begin manufacturing and shipping the first batch of orders.</h5>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4 btn-box">
+				<a class="btn btn-primary btn-lg" href="#" role="button">Ask More Questions</a>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="container hatch-container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h4>Hatch a Design!</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="design-box">
+				<div class="design-imgbox">
+				</div>
+				<div class="design-subbox">
+					<div class="row">
+						<div class="col-md-12">							
+							<h5 class="design-title"><b>Fin</b></h5>
+						</div>
+						<div class="col-xs-9">
+							<h5 class="design-author"><a href="/designer/evan/">by Evan Liao</a></h5>
+						</div>
+						<div class="col-xs-3">
+							<h5 class="design-price">$249.00</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="design-box">
+				<div class="design-imgbox">
+				</div>
+				<div class="design-subbox">
+					<div class="row">
+						<div class="col-md-12">							
+							<h5 class="design-title"><b>Fin</b></h5>
+						</div>
+						<div class="col-xs-9">
+							<h5 class="design-author"><a href="/designer/evan/">by Evan Liao</a></h5>
+						</div>
+						<div class="col-xs-3">
+							<h5 class="design-price">$249.00</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="design-box">
+				<div class="design-imgbox">
+				</div>
+				<div class="design-subbox">
+					<div class="row">
+						<div class="col-md-12">							
+							<h5 class="design-title"><b>Fin</b></h5>
+						</div>
+						<div class="col-xs-9">
+							<h5 class="design-author"><a href="/designer/evan/">by Evan Liao</a></h5>
+						</div>
+						<div class="col-xs-3">
+							<h5 class="design-price">$249.00</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+	<div class="container hatch-container">
+	<div class="browse-theme">
+		<div class="row">
+			<div class="col-sm-6">
+				<h4>Browse by theme</h4>
+			</div>
+			<div class="col-sm-6 text-right">					
+				<h4><a href="#" class="see-all-text">See All</a></h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="design-box">
+					<div class="design-imgbox">
+					</div>
+					<div class="design-subbox">
+						<div class="row">
+							<div class="col-md-9">
+								<h5 class="suggest-title"><b>Eames Plywood Rocking Chair</b></h5>
+								<h5 class="suggest-author"><a href="/designer/evan/">by Evan Liao</a></h5>
+							</div>							
+							<div class="col-md-3 liked-box">
+								<div class="glyphicon glyphicon-thumbs-up liked-img"></div>
+								<h5 class="liked-txt">47</h5>
+							</div>	
+						</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="design-box">
+					<div class="design-imgbox">
+					</div>
+					<div class="design-subbox">
+						<div class="row">
+							<div class="col-md-9">
+								<h5 class="suggest-title"><b>Eames Plywood Rocking Chair</b></h5>
+								<h5 class="suggest-author"><a href="/designer/evan/">by Evan Liao</a></h5>
+							</div>							
+							<div class="col-md-3 liked-box">
+								<div class="glyphicon glyphicon-thumbs-up liked-img"></div>
+								<h5 class="liked-txt">47</h5>
+							</div>	
+						</div>		
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="design-box">
+					<div class="design-imgbox">
+					</div>
+					<div class="design-subbox">
+						<div class="row">
+							<div class="col-md-9">
+								<h5 class="suggest-title"><b>Eames Plywood Rocking Chair</b></h5>
+								<h5 class="suggest-author"><a href="/designer/evan/">by Evan Liao</a></h5>
+							</div>							
+							<div class="col-md-3 liked-box">
+								<div class="glyphicon glyphicon-thumbs-up liked-img"></div>
+								<h5 class="liked-txt">47</h5>
+							</div>	
+						</div>		
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>	
+	<footer class="footer">
+	<div class="container footer-container">
+		<div class="row">
+			<div class="col-xs-9">
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="/how" class="footer-links">How It Works</a>
+						<a href="#" class="footer-links">Shipping &amp; Return</a>
+						<a href="#" class="footer-links">FAQ</a>
+					</div>
+					<div class="col-sm-3">
+						<a href="#" class="footer-links">Team</a>
+						<a href="/contact" class="footer-links">Contact Us</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="row">
+					<div class="col-xs-3">
+						<div class="footer-social-box">
+							 <i class="flaticon-facebook55 footer-social"></i>
+						</div>
+					</div>
+					<div class="col-xs-3">
+						<div class="footer-social-box">
+							 <i class="flaticon-pinterest27 footer-social"></i>
+						</div>
+					</div>
+					<div class="col-xs-3 ">
+						<div class="footer-social-box">
+							 <i class="flaticon-instagram12 footer-social"></i>
+						</div>
+					</div>
+					<div class="col-xs-3">
+						<div class="footer-social-box">
+							 <i class="flaticon-twitter1 footer-social"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69441006-1', 'auto');
+  ga('send', 'pageview');
+
+</script>	
+</body>
+</html>
