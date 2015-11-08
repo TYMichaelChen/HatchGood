@@ -1,4 +1,5 @@
 #homeContainer{
+	width:100%;
 	@import 'hatchContainer';
 	.jumbotron{	
 		background: url(../images/bg.jpg) no-repeat 75% 85% fixed; 
@@ -7,7 +8,7 @@
 	}
 	.jumbo-container{
 		padding:110px 0;
-		width:78%;
+		width:100%;
 		margin:0 auto;
 		text-align:center;
 		.title-txt{
@@ -15,11 +16,12 @@
 			line-height: 1.5em;
 		}
 		#jumbo-btn{
-			padding-top: 30px;
+			padding-top: 15px;
 			.btn{
-				border:$prim-color;			
-				background-color:$prim-color;
-				opacity:0.8;
+				border:2.5px solid $prim-color;			
+				background-color:$white;
+				color:#000;
+				opacity:0.7;
 			}
 			.btn-1{
 				margin-right: 5px;
@@ -30,6 +32,10 @@
 		}	
 	}
 	#howToHatch{
+		padding:0px 72px;
+		.detail-box{
+			margin-top:30px;
+		}
 		.design-imgbox{
 			background-color: $gray;
 			margin:0 auto;

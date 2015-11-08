@@ -1,7 +1,7 @@
 /*Nav Styles*/
 .navbar{
 	background-color: $white;
-	padding-top: 8px;
+	padding:8px 36px 0 36px;
 	height:$navbar-height;
 	border-bottom:5px solid $prim-color;
 	.navbar-brand{
@@ -12,7 +12,7 @@
 		color:$black;
 	}
 	input{
-		border:1px solid $black;
+		border:1px solid $lt-black;
 		border-radius: 2px;
 	}
 }
