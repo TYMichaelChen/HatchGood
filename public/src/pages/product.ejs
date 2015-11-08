@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<% include partials/general/_header.ejs %>
-	
-	<link rel="stylesheet" type="text/css" href="/stylesheets/product.css" />
-</head>
-<body>
-	<% include partials/general/_nav.ejs %>
-	<div id="product-container">
+<div id="product-container" ng-controller="productController">
 		<div class="row">
 			<div class="col-md-9">				
 				<% include partials/product/_productContent.ejs%>
@@ -49,8 +40,3 @@
 			</div>
 		</div>
 	</div>
-	<% include partials/general/_footer.ejs %>
-	<% include partials/general/_js.ejs %>	
-	<script src="/js/product.js"></script>
-</body>
-</html>

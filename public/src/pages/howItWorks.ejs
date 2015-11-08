@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<% include partials/general/_header.ejs %>	
-	<link rel="stylesheet" type="text/css" href="/stylesheets/howItWorks.css" />
-</head>
-<body>
-	<% include partials/general/_nav.ejs %>
-	<div id="howworks-container">
+<div id="howworks-container" ng-controller="howItWorksController">
 		<div class="row">
 			<div class="col-md-12">
 				<h4 class="hatch-txt"> Hatch a Design!</h4>
@@ -49,8 +41,4 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<% include partials/general/_footer.ejs %>
-	<% include partials/general/_js.ejs %>
-</body>
-</html>
+</div>

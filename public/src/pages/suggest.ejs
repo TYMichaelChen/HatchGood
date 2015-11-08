@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<% include partials/general/_header.ejs %>
-	
-	<link rel="stylesheet" type="text/css" href="/stylesheets/suggest.css" />
-</head>
-<body>
-	<% include partials/general/_nav.ejs %>
-	<div id="suggest-container">
+<div id="suggest-container" ng-controller="suggestController">
 		<% include partials/suggest/_suggestJumbo.ejs%>
 		<% include partials/suggest/_suggestProducts.ejs%>
-	</div>
-	<% include partials/general/_footer.ejs %>
-	<% include partials/general/_js.ejs %>	
-</body>
-</html>
+</div>

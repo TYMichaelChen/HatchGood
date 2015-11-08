@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<% include partials/general/_header.ejs %>	
-	<link rel="stylesheet" type="text/css" href="/stylesheets/designer.css" />
-</head>
-<body>
-	<% include partials/general/_nav.ejs %>
-	<div id="designerPage-container">
-		<% include partials/designer/_designerAbout.ejs%>
-	</div>
-	<% include partials/general/_footer.ejs %>
-	<% include partials/general/_js.ejs %>
-</body>
-</html>
+<div id="designerPage-container" ng-controller="designerController">
+	<% include partials/designer/_designerAbout.ejs%>
+</div>

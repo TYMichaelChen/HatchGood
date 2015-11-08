@@ -1,25 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<% include partials/general/_header.ejs %>	
-	<link rel="stylesheet" type="text/css" href="/stylesheets/contact.css" />
-</head>
-<body>
-	<% include partials/general/_nav.ejs %>
-	<div id="contact-container">
-		<div class="row">
-			<div class="col-md-6 col-md-offset-3">
-				<h4 class="question-txt"> Got more questions for us?</h4>
-			</div>
-			<div class="col-md-6 col-md-offset-3">
-				<textarea class="form-control question-input" rows="8"></textarea>
-			</div>
-			<div class="col-md-6 col-md-offset-3 ask-box">
-				<button type="button" class="btn btn-default ask-btn">Ask</button>
-			</div>
+<div id="contact-container" ng-controller="contactController">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<h4 class="question-txt"> Got more questions for us?</h4>
+		</div>
+		<div class="col-md-6 col-md-offset-3">
+			<textarea class="form-control question-input" rows="8"></textarea>
+		</div>
+		<div class="col-md-6 col-md-offset-3 ask-box">
+			<button type="button" class="btn btn-default ask-btn">Ask</button>
 		</div>
 	</div>
-	<% include partials/general/_footer.ejs %>
-	<% include partials/general/_js.ejs %>
-</body>
-</html>
+</div>
