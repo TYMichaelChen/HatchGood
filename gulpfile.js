@@ -27,10 +27,9 @@ gulp.task('sass', function() {
         .pipe(sass())
         .on('error',sass.logError)
         .pipe(autoprefixer('last 2 version'))
-        .pipe(gulp.dest('public/dist/stylesheets'))
         .pipe(rename({suffix: '.min'}))
-        .pipe(minifycss())
-        .pipe(gulp.dest('public/dist/stylesheets/min'));
+        .pipe(minifycss()) 
+        .pipe(gulp.dest('public/dist/stylesheets'));;
 });
 
 // Compile Our Sass
@@ -49,4 +48,4 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'ejs', 'scripts', 'watch']);
+gulp.task('default', ['sass', 'ejs', 'watch']);
