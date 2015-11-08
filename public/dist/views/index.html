@@ -1,14 +1,23 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<base href="/">
+	<title>Hatch Good</title>
+	<link rel="stylesheet" type="text/css" href="../libs/bootstrap/dist/css/bootstrap.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href="../stylesheets/flaticon.css" rel='stylesheet' type='text/css'>
 
-    <title>Starter MEAN Single Page Application</title>
+	<!--JS-->
+	<script src="../libs/angular/angular.min.js"></script>
+	<script src="../libs/angular-route/angular.min.js"></script>
 
+	<!--ANGULAR CUSTOM-->
+	<script src="../js/controllers/homeCtrl.js"></script>
 </head>
-<body>
-
-    we did it!
-
+<body ng-app="HatchGood" ng-controller="HomeController">
+	<h3>asd</h3>
+	<div ng-view></div>
 </body>
 </html>

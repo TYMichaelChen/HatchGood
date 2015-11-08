@@ -1,1 +1,5 @@
-angular.module('HatchGood',['ngRoute','appRoutes']);
+angular.module('HatchGood',[
+	'ngRoute',
+	'appRoutes',
+	'homeController'
+]);

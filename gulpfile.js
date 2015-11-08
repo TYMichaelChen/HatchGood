@@ -18,7 +18,7 @@ var paths = {
     ejs:['./public/src/pages/*.ejs'],
     ejs1:['./public/src/pages/partials/**/*.ejs'],
     js:['./public/src/js/*.js'],
-    js1:['./public/src/js/**/*.js']
+    js1:['./public/src/js/controllers/*.js']
 }
 
 // Compile Our Sass
@@ -41,27 +41,9 @@ gulp.task('ejs', function() {
         .pipe(gulp.dest('public/dist/views'));
 });
 
-// Lint Task
-gulp.task('lint', function() {
-    return gulp.src(paths.js)
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
-    return gulp.src(paths.js1)
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
-});
-// JS
-gulp.task('scripts', function() {
-    return gulp.src(paths.js)
-        .pipe(gulp.dest('public/dist/js'));
-
-    return gulp.src(paths.js1)
-        .pipe(gulp.dest('public/dist/js'));
-});
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch([paths.js,paths.js1], ['lint', 'scripts']);
     gulp.watch([paths.sass,paths.sass1], ['sass']);
     gulp.watch([paths.ejs,paths.ejs1], ['ejs']);
 });
