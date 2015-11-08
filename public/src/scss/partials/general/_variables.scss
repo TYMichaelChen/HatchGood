@@ -1,12 +1,21 @@
-$lt-gray: #e6e7e8;
+$lt-gray: #BBBDBF;
+$lt1-gray:#D1D3D4;
 $gray: #bbbdc0;
 $d-gray: #6D6E70;
+
 $white: #fff;
+
+$lt-blue: #f7fafa;
+
 $lt-black:#6D6E71;
+$lt1-black:#6d6371;
 $black: #000;
+
 $yellow:#FFD731;
+
 $prim-color:$yellow;
 $sec-color:red;
+
 $navbar-height:66px;
 
 $break-small: 700px;
@@ -32,6 +41,10 @@ body{
 }
 .lato{
 	font-family: 'Lato', sans-serif;
+}
+.lato-bold{
+	font-family: 'Lato', sans-serif;
+	font-weight:700;
 }
 .playfair{
 	font-family: 'Playfair Display', serif;
