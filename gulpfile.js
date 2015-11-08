@@ -4,22 +4,33 @@ var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
+var gutil = require('gulp-util');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 var minifycss = require('gulp-minify-css');
 var rename = require('gulp-rename');
+var ejs = require('gulp-ejs');
+
+var paths = {
+    sass:['./public/src/scss/*.scss'],
+    sass1:['./public/src/scss/partials/**/*.scss'],
+    ejs:['./public/src/pages/*.ejs'],
+    ejs1:['./public/src/pages/partials/**/*.ejs'],
+    js:['./public/src/js/*.js']
+}
 // Lint Task
 gulp.task('lint', function() {
-    return gulp.src('js/*.js')
+    return gulp.src(paths.js)
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
 });
 
 // Compile Our Sass
 gulp.task('sass', function() {
-    return gulp.src('public/src/scss/*.scss')
+    return gulp.src(paths.sass)
         .pipe(sass())
+        .on('error',sass.logError)
         .pipe(autoprefixer('last 2 version'))
         .pipe(gulp.dest('public/dist/stylesheets'))
         .pipe(rename({suffix: '.min'}))
@@ -27,9 +38,17 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('public/dist/stylesheets/min'));
 });
 
+// Compile Our Sass
+gulp.task('ejs', function() {
+    return gulp.src(paths.ejs)
+        .pipe(ejs({msg:"Gulping EJS"}))
+        .on('error',gutil.log)
+        .pipe(gulp.dest('public/dist/views'));
+});
+
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
-    return gulp.src('public/src/js/*.js')
+    return gulp.src(paths.js)
         .pipe(gulp.dest('public/dist/js'))
         .pipe(concat('all.js'))
         .pipe(rename('all.min.js'))
@@ -39,10 +58,10 @@ gulp.task('scripts', function() {
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch('public/src/js/*.js', ['lint', 'scripts']);
-    gulp.watch('public/src/scss/*.scss', ['sass']);
-    gulp.watch('public/src/scss/partials/**/*.scss', ['sass']);
+    gulp.watch([paths.js], ['lint', 'scripts']);
+    gulp.watch([paths.sass,paths.sass1], ['sass']);
+    gulp.watch([paths.ejs,paths.ejs1], ['ejs']);
 });
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
+gulp.task('default', ['lint', 'sass', 'ejs', 'scripts', 'watch']);
