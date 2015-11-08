@@ -1,0 +1,9 @@
+{
+	"name":"HatchGood",
+	"version":"0.0.2",
+	"dependencies":{
+		"bootstrap":"latest",
+		"angular":"latest",
+		"angular-route":"latest"
+	}
+}
