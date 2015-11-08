@@ -1,35 +1,34 @@
 #homeContainer{
 	width:100%;
-	@import 'hatchContainer';
 	.jumbotron{	
 		background: url(../images/bg.jpg) no-repeat 75% 85% fixed; 
 		background-size: cover;
 		height: 550px;
-	}
-	.jumbo-container{
-		padding:110px 0;
-		width:100%;
-		margin:0 auto;
-		text-align:center;
-		.title-txt{
-			@extend .playfair;
-			line-height: 1.5em;
+		.jumbo-container{
+			padding:110px 0;
+			width:100%;
+			margin:0 auto;
+			text-align:center;
+			.title-txt{
+				@extend .playfair;
+				line-height: 1.5em;
+			}
+			#jumbo-btn{
+				padding-top: 15px;
+				.btn{
+					border:2.5px solid $prim-color;			
+					background-color:$white;
+					color:#000;
+					opacity:0.7;
+				}
+				.btn-1{
+					margin-right: 5px;
+				}
+				.btn-2{
+					margin-left: 5px;
+				}
+			}	
 		}
-		#jumbo-btn{
-			padding-top: 15px;
-			.btn{
-				border:2.5px solid $prim-color;			
-				background-color:$white;
-				color:#000;
-				opacity:0.7;
-			}
-			.btn-1{
-				margin-right: 5px;
-			}
-			.btn-2{
-				margin-left: 5px;
-			}
-		}	
 	}
 	#howToHatch{
 		padding:0px 72px;
@@ -43,11 +42,17 @@
 			height:200px;	
 			border-radius: 5px;
 		}
-		.num-txt{
-			font-size: 25px;
-		}
-		.desc-txt{
-			line-height: 1.2em;
+		.howdesc-box{
+			width:60%;
+			margin:0 auto;
+			text-align: center;
+			.num-txt{
+				@extend .playfair-bold;
+				font-size: 25px;
+			}
+			.desc-txt{
+				line-height: 1.2em;
+			}
 		}
 		.btn-box{
 			margin-top:30px;
@@ -57,6 +62,70 @@
 				border:1px solid $black;
 				color:$black;
 			}
+		}
+	}
+	.home-container{
+		width:100%;
+		margin:0 auto;	
+		padding:0px 72px 80px 72px;
+		.browse-theme{
+			.see-all-text{
+				margin-top: 10px;
+				text-decoration: underline;
+				color: #000;
+			}	
+			.suggest-title{
+
+			}
+			.suggest-author{
+				a{
+					color:$d-gray;
+				}
+			}
+			.liked-box{
+				text-align: center;
+				.liked-img{
+					margin-top:5px;
+					font-size:20px;
+				}
+				.liked-txt{
+					margin-top:5px;
+					line-height: 0.3em;
+				}
+			}
+		}
+		.design-box{
+			margin-top: 30px;
+		}
+		.design-imgbox{
+			background-color: $gray;
+			width:95%;
+			margin:0 auto;
+			height:200px;	
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+		}
+		.design-subbox{
+			padding:10px 20px;
+			height:100px;	
+			border-bottom-left-radius: 4px;
+			border-bottom-right-radius: 4px;
+			.design-title{
+				line-height: 0.1em;
+			}
+			.design-author{
+				line-height: 0.1em;
+				color:$gray;
+				a{
+					color:$gray;
+				}
+			}
+			.design-price{
+				line-height: 0.1em;
+			}
+		}
+		.see-all{
+			text-decoration: underline;
 		}
 	}
 }
