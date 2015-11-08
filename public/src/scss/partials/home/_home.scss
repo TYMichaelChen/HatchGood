@@ -1,8 +1,9 @@
 #homeContainer{
 	@import 'hatchContainer';
 	.jumbotron{	
-		background: url(../images/bg.jpg) no-repeat center center fixed; 
+		background: url(../images/bg.jpg) no-repeat 75% 85% fixed; 
 		background-size: cover;
+		height: 550px;
 	}
 	.jumbo-container{
 		padding:110px 0;
