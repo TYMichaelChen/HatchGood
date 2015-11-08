@@ -1,18 +1,16 @@
-<div class="container-fluid product-container" ng-controller="productListController">
-	<div class="row">
-		<div class="col-md-2">
-			<div class="sidebar-box hidden-xs hidden-sm affix">
-				<h5>I am looking for</h5>
-				<% include _filterDropdown %>
-				<h5>Sort by</h5>
-				<% include _sortDropdown %>
-			</div>
+<div class="row">
+	<div class="col-md-2">
+		<div class="sidebar-box hidden-xs hidden-sm affix">
+			<h5>I am looking for</h5>
+			<% include _filterDropdown %>
+			<h5>Sort by</h5>
+			<% include _sortDropdown %>
 		</div>
+	</div>
 
-		<div class="col-md-10">
-			<div class="main-box">
-				<% include _productExample.ejs %>
-			</div>
+	<div class="col-md-10">
+		<div class="main-box">
+			<% include _productExample.ejs %>
 		</div>
 	</div>
 </div>

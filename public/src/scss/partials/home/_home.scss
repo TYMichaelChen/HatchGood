@@ -1,53 +1,55 @@
-@import 'hatchContainer';
-.jumbotron{	
-	background: url(../images/bg.jpg) no-repeat center center fixed; 
-	background-size: cover;
-}
-.jumbo-container{
-	padding:110px 0;
-	width:78%;
-	margin:0 auto;
-	text-align:center;
-	.title-txt{
-		@extend .playfair;
-		line-height: 1.5em;
+#homeContainer{
+	@import 'hatchContainer';
+	.jumbotron{	
+		background: url(../images/bg.jpg) no-repeat center center fixed; 
+		background-size: cover;
 	}
-	#jumbo-btn{
-		padding-top: 30px;
-		.btn{
-			border:$prim-color;			
-			background-color:$prim-color;
-			opacity:0.8;
-		}
-		.btn-1{
-			margin-right: 5px;
-		}
-		.btn-2{
-			margin-left: 5px;
-		}
-	}	
-}
-#howToHatch{
-	.design-imgbox{
-		background-color: $gray;
+	.jumbo-container{
+		padding:110px 0;
+		width:78%;
 		margin:0 auto;
-		width:100%;
-		height:200px;	
-		border-radius: 5px;
+		text-align:center;
+		.title-txt{
+			@extend .playfair;
+			line-height: 1.5em;
+		}
+		#jumbo-btn{
+			padding-top: 30px;
+			.btn{
+				border:$prim-color;			
+				background-color:$prim-color;
+				opacity:0.8;
+			}
+			.btn-1{
+				margin-right: 5px;
+			}
+			.btn-2{
+				margin-left: 5px;
+			}
+		}	
 	}
-	.num-txt{
-		font-size: 25px;
-	}
-	.desc-txt{
-		line-height: 1.2em;
-	}
-	.btn-box{
-		margin-top:30px;
-		text-align: center;
-		.btn{
-			background-color: $white;
-			border:1px solid $black;
-			color:$black;
+	#howToHatch{
+		.design-imgbox{
+			background-color: $gray;
+			margin:0 auto;
+			width:100%;
+			height:200px;	
+			border-radius: 5px;
+		}
+		.num-txt{
+			font-size: 25px;
+		}
+		.desc-txt{
+			line-height: 1.2em;
+		}
+		.btn-box{
+			margin-top:30px;
+			text-align: center;
+			.btn{
+				background-color: $white;
+				border:1px solid $black;
+				color:$black;
+			}
 		}
 	}
 }
