@@ -7,7 +7,7 @@ var express = require('express'),
 var app = express();
 
 //===================== Config =====================
-var db = require('./config/db');
+// var db = require('./config/db');
 
 app.use(bodyParser.json()); 
 app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse application/vnd.api+json as json
