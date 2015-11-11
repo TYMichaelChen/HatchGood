@@ -1,7 +1,4 @@
-#homeContainer{
-	width:100%;
-	background-color:$lt-blue;
-	.jumbotron{	
+.jumbotron{	
 		background: url(../images/bg.jpg) no-repeat 75% 85% fixed; 
 		background-size: cover;
 		height: 550px;
@@ -40,6 +37,9 @@
 			}	
 		}
 	}
+#homeContainer{
+	width:100%;
+	background-color:$lt-blue;
 	.home-container{
 		width:100%;
 		margin:0 auto;
