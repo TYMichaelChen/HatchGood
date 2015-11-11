@@ -3,9 +3,13 @@
 	background-color: $white;
 	padding:8px 36px 0 36px;
 	height:$navbar-height;
-	border-bottom:5px solid $prim-color;
 	.navbar-brand{
 		@extend .playfair;	
+		color:$black;
+	}
+	.header-logo{
+		@extend .playfair-bold;
+		font-size: 25px;
 		color:$black;
 	}
 	a{
