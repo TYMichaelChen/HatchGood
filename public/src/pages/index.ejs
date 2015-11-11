@@ -31,12 +31,17 @@
 	<script src="../js/app.js"></script>
 </head>
 <body ng-app="HatchGood" ng-controller="homeController">
-
-	<% include partials/general/_nav.ejs %>
+	<div class="navbar-container">
+		<% include partials/general/_nav.ejs %>
+	</div>
 	<!-- ANGULAR DYNAMIC CONTENT -->
-	<div ng-view autoscroll="true"></div>
-	
-	<% include partials/general/_footer.ejs %>
+
+	<div class="content-container">
+		<div ng-view autoscroll="true"></div>
+	</div>
+	<div class="footer-container">
+		<% include partials/general/_footer.ejs %>
+	</div>
 	<% include partials/general/_js.ejs %>	
 </body>
 </html>
