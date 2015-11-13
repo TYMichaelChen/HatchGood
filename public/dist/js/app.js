@@ -1,5 +1,6 @@
 angular.module('HatchGood', [
-	'ngRoute', 
+	'ngRoute',
+	'ui.bootstrap',
 	'appRoutes', 
 	'homeCtrl',
 	'productListCtrl',

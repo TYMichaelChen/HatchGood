@@ -1,9 +1,41 @@
 .content-box{
+	.see-box{
+		.see-all-txt{
+			font-size: 16px;
+			color:$black;
+			text-decoration: underline;
+		}
+	}
+	.product-desc-box{
+		margin-top: 50px;	
+		.product-title-txt{
+			color:$black;		
+		}
+		.product-author-txt{
+			margin-left: 5px;
+			color:$d-gray;	
+			.author-txt{
+				text-decoration: underline;
+				color:$d-gray;	
+			}	
+		}
+	}
 	.gallery-box{
 		width:98%;
 		height:500px;
-		background-color: $gray;		
-		margin-top:50px;
+		margin-top:10px;
+		.productCarousel{
+			height:500px;
+			.carousel-control{
+				background-color: $lt-blue;
+				background-image:none;
+			}
+			img {
+			  width: auto;
+			  height: 500px;
+			  max-height: 500px;
+			}
+		}
 	}
 	.nav-tab-box{
 		margin-top:50px;
