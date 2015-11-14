@@ -22,7 +22,9 @@
   <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
     <uib-slide ng-repeat="slide in slides" active="slide.active">
       <img ng-src="{{slide.image}}" style="margin:auto;">
+
     </uib-slide>
+     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left">a</span></a> <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
   </uib-carousel>
   </div>
 </div>
@@ -105,11 +107,6 @@
 				<div class="info-box">
 	<div class="row ">
 	<div id="sticky-box" class="affix">
-		<div class="col-md-12">
-			<div class="view-box">
-				<h5>5 people are currently viewing this product</h5>
-			</div>
-		</div>
 		<div class="col-md-12">
 			<div class="row content-box">
 				<div class="col-md-6">
