@@ -15,7 +15,7 @@
 			#jumbo-btn{
 				padding-top: 15px;
 				.btn{
-					border:2.5px solid $prim-color;			
+					border:2.5px solid $yellow;			
 					background-color:$white;
 					color:#000;
 					opacity:0.7;
@@ -50,7 +50,7 @@
 			padding:0;
 			.title-txt{
 				@extend .lato-bold;
-				color:$lt1-black;
+				color:$black;
 				padding:0;
 			}
 			.see-all-text{
@@ -103,9 +103,9 @@
 				margin:0 auto;
 				.piece-box{
 					.design-author{
-						color:$lt-black;
+						color:$black;
 						a{
-							color:$lt-black;
+							color:$black;
 						}
 					}
 				}
@@ -126,7 +126,7 @@
 			.design-box{
 				border-radius:10px;
 				padding:10px;
-				border:1px solid $lt1-gray;				
+				border:1px solid $lt-gray;				
 				.design-imgbox{
 					width:100%;
 					margin:0 auto;			
