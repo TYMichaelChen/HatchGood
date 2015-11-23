@@ -1,12 +1,12 @@
 .footer{
 	width:100%;
 	padding:80px 72px 80px 72px;
-	background-color: $gray;
+	background-color: $lt-gray;
 	.footer-container{
 		width:100%;
 	}
 	.footer-links{
-		color:$black;
+		color:$d-gray;
 		display: block;
 		line-height: 1.8em;
 	}
@@ -14,7 +14,7 @@
 		text-align: center;
 	}
 	.footer-social{
-		color:$d-gray;
+		color:$gray;
 		font-size:25px;
 		cursor:pointer;
 	}
