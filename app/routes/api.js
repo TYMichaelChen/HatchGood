@@ -13,7 +13,7 @@ module.exports = function(app){
 	});
 
 	app.get('*',function(req,res){
-		res.sendfile('./public/dist/views/index.html');
+		res.sendFile('dist/views/index.html',{root:'public/'});
 	})
 
 }
