@@ -1,0 +1,50 @@
+@import 'variables';
+@import 'nav/navbar';
+@import 'nav/signupin';
+@import 'nav/footer';
+$large-screen-width:1600px;
+
+.btn{
+	border-radius: 2px;
+	padding:12px 20px;
+}
+
+.form-control{
+	border-radius: 2px;
+}
+.navbar-container{
+	position: fixed;
+	top:0;
+	background-color: $white;
+	height:$navbar-height;
+	width:100%;
+	z-index: 99;
+	.navbar{
+		width: 100%;
+		@media only screen and (min-width:$break-large) {
+			width:$large-screen-width;
+			margin:0 auto;
+		}
+	}
+}
+.content-container{
+	background-color: $lt-blue;
+	.content{		
+		width:100%;
+		@media only screen and (min-width:$break-large) {
+			width:$large-screen-width;
+			margin:0 auto;
+			background-color: $lt-blue;
+		}
+	}
+}
+.footer-container{
+	background-color: $lt-gray;
+	.footer{
+		width: 100%;
+		@media only screen and (min-width:$break-large) {
+			width:$large-screen-width;
+			margin:0 auto;
+		}
+	}
+}

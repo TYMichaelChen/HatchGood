@@ -1,0 +1,22 @@
+#product-container{
+	padding:50px 36px 50px 36px;
+	margin-top: $navbar-height;
+
+	@import 'partials/products/productContent';
+	@import 'partials/products/productInfo';
+
+	.like-box{
+		width:100%;
+		text-align: center;
+		margin-top:100px;
+		.design-box{
+			margin-top: 50px;
+			.design-img{
+				width:95%;
+				margin:0 auto;
+				background-color: $gray;
+				height:300px;
+			}
+		}
+	}
+}
