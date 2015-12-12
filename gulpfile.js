@@ -29,7 +29,7 @@ gulp.task('sass', function() {
         .pipe(autoprefixer('last 2 version'))
         .pipe(rename({suffix: '.min'}))
         .pipe(minifycss()) 
-        .pipe(gulp.dest('public/dist/stylesheets'));;
+        .pipe(gulp.dest('public/build/stylesheets'));;
 });
 
 // Compile Our Sass
@@ -37,7 +37,7 @@ gulp.task('ejs', function() {
     return gulp.src(paths.ejs)
         .pipe(ejs({msg:"Gulping EJS"}))
         .on('error',gutil.log)
-        .pipe(gulp.dest('public/dist/views'));
+        .pipe(gulp.dest('public/build/views'));
 });
 
 

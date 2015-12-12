@@ -12,7 +12,7 @@ var app = express();
 app.use(bodyParser.json()); 
 app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse application/vnd.api+json as json
 app.use(bodyParser.urlencoded({ extended: true })); 
-app.use(express.static(__dirname + '/public/dist'));
+app.use(express.static(__dirname + '/public/build'));
 app.use(methodOverride('X-HTTP-Method-Override')); // override with the X-HTTP-Method-Override header in the request. simulate DELETE/PUT
 //===================== Routes =====================
 
