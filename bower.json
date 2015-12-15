@@ -5,6 +5,7 @@
     "angular": "latest",
     "angular-bootstrap": "~0.14.3",
     "angular-route": "latest",
-    "bootstrap": "latest"
+    "bootstrap": "latest",
+    "angular-animate": "~1.4.8"
   }
 }

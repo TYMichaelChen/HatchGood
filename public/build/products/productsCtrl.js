@@ -1,4 +1,8 @@
-angular.module('productCtrl', []).controller('productController', function($scope) {
+angular.module('productCtrl', [])
+
+
+.controller('productController', function(
+	$scope) {
 	$scope.myInterval = 5000;
 	$scope.noWrapSlides = false;
 	var slides = $scope.slides = [
@@ -16,4 +20,15 @@ angular.module('productCtrl', []).controller('productController', function($scop
 	    }
 	];
 
+})
+//Override UI Bootstrap Carousel Directive's Template
+.config(['$provide', Decorate]);
+function Decorate($provide) {
+$provide.decorator('uibCarouselDirective', function($delegate) {
+  var directive = $delegate[0];  
+  directive.templateUrl = "products/partials/products/carousel.tpl.html";
+  
+  return $delegate;
 });
+}
+  

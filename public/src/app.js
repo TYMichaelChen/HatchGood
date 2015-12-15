@@ -1,5 +1,6 @@
 angular.module('HatchGood', [
 	'ngRoute',
+	'ngAnimate',
 	'ui.bootstrap',
 	'appRoutes', 
 	'homeCtrl',
