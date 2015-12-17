@@ -5,7 +5,6 @@
 	height:$navbar-height;
 	.navbar-brand{
 		@extend .playfair;	
-		color:$black;
 	}
 	.header-logo{
 		@extend .playfair-bold;

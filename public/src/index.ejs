@@ -19,10 +19,10 @@
 	<div class="navbar-container">
 		<% include shared/nav/_nav.ejs %>
 	</div>
-	<!-- ANGULAR DYNAMIC CONTENT -->
-
 	<div class="content-container">
-		<div ng-view autoscroll="true"></div>
+		<div class="content">
+			<div ng-view autoscroll="true"></div>
+		</div>
 	</div>
 	<div class="footer-container">
 		<% include shared/nav/_footer.ejs %>

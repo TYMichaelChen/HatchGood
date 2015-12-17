@@ -1,42 +1,36 @@
 .jumbotron{	
-		background: url(../assets/images/bg.jpg) no-repeat 75% 85% fixed; 
-		background-size: cover;
-		height: 550px;
-		.jumbo-container{
-			padding:110px 0;
-			width:100%;
-			margin:0 auto;
-			text-align:center;
-			.title-txt{
-				@extend .playfair;
-				font-size: 40px;
-				line-height: 1.9em;
-			}
-			#jumbo-btn{
-				padding-top: 15px;
-				.btn{
-					border:2.5px solid $yellow;			
-					background-color:$white;
-					color:#000;
-					opacity:0.7;
-				}
-				.btn-1{
-					margin-right: 5px;
-				}
-				.btn-2{
-					margin-left: 5px;
-				}
-			}
-			.credit-box{
-				margin: 200px 5px 0 0;
-				bottom:0;
-				text-align: right;
-				h6{
-					font-size: 9px;
-				}
-			}	
+	background: url(../assets/images/bg.jpg) no-repeat 75% 85% fixed; 
+	background-size: cover;
+	height: 550px;
+	.jumbo-container{
+		padding:90px 0;
+		width:100%;
+		margin:0 auto;
+		text-align:center;
+		.title-txt{
+			@extend .playfair;
+			font-size: 40px;
+			line-height: 1.4em;
 		}
+		#jumbo-btn{
+			padding-top: 15px;
+			.btn{
+				border:2.5px solid $yellow;			
+				background-color:$white;
+				color:#000;
+				opacity:0.7;
+			}
+		}
+		.credit-box{
+			margin: 200px 5px 0 0;
+			bottom:0;
+			text-align: right;
+			h6{
+				font-size: 9px;
+			}
+		}	
 	}
+}
 #homeContainer{
 	width:100%;
 	background-color:$lt-blue;

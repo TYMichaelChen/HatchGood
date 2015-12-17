@@ -1,12 +1,14 @@
-<div id="product-container" ng-controller="productController">
-	<div class="container-fluid">
-		<div class="row">
+<div id="productContainer" ng-controller="productController">
+	<div class="container-fluid product-container">
+		<div class="row product-row-top">
 			<div class="col-md-9">				
 				<% include partials/products/_productContent.ejs%>
 			</div>
 			<div class="col-md-3">
 				<% include partials/products/_productInfo.ejs%>
 			</div>
+		</div>
+		<div class="row product-row-bot">
 			<div class="col-md-12 bot-box">
 				<div class="like-box">
 					<h3 class="like-txt">You Might Also Like</h3>

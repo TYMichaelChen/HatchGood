@@ -1,6 +1,31 @@
+.sidebar-nav-fixed{
+	min-height: 250px;
+}
+
+	.carousel-control{
+		opacity: 1;
+	}
+	.carousel-left-arrow{
+		display: block;
+		position: absolute;
+		font-size: 30px;
+		left:30%;
+		top:50%;
+		color:#000;
+	}
+	.carousel-right-arrow{
+		display: block;
+		position: absolute;
+		font-size: 30px;
+		left:30%;
+		top:50%;
+		color:#000;
+	}
+
+
 .info-box{
 		min-height: 250px;
-		right:10px;
+		margin-right:100px;
 		.view-box{
 			padding:10px 25px;			
 			width:100%;
