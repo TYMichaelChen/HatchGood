@@ -9,6 +9,25 @@
 			padding:0px 15px;
 			@import 'partials/products/productContent';
 			@import 'partials/products/productInfo';
+			.carousel-control{
+				opacity: 1;
+			}
+			.carousel-left-arrow{
+				display: block;
+				position: absolute;
+				font-size: 30px;
+				left:30%;
+				top:50%;
+				color:#000;
+			}
+			.carousel-right-arrow{
+				display: block;
+				position: absolute;
+				font-size: 30px;
+				left:30%;
+				top:50%;
+				color:#000;
+			}
 		}
 		.product-row-bot{
 			padding:0px 36px;
