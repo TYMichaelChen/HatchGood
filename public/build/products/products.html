@@ -12,7 +12,7 @@
 		<div class="col-md-12">
 			<div class="product-desc-box">
 				<h2 class="product-title-txt">Hedge Pendant Pair in Fig </h2>
-				<h4 class="product-author-txt">by <a href="#" class="author-txt">Cora Neil</a></h4>
+				<h4 class="product-author-txt">by <a href="#" class="author-txt" ng-click="openDesignerModal('Cora Neil')">Cora Neil</a></h4>
 			</div>
 		</div>
 		<div class="col-md-12">
@@ -147,7 +147,7 @@
 			</div>
 			<div class="col-md-12 btn-box">
 				<button class="btn btn-default add-btn" type="submit">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</button>
-				<button class="btn btn-default hatch-btn" type="submit">Hatch it!</button>
+				<a href="#" class="btn btn-default hatch-btn" ng-click="openHatchModal()">Hatch it!</a>
 			</div>
 			<div class="col-md-12 more-box">
 				<h5>More designs by Cora Neil</h5>
@@ -206,4 +206,37 @@
 			</div>
 		</div>
 	</div>
+	<div class="modal-body">		
+	<span class="close-btn pull-right flaticon-cross31" ng-click="close()"></span>
+	<div class="hatchModal">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h5>Thank You!</h5>
+				<h5>We are one step closer to bringing ______ to your world!</h5>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h5>Fill in the information below and we will continue to update you on its status.</h5>
+				<form role="form">
+					<div class="form-group">
+						<input type="text" class="form-control zipcode-input" placeholder="Zip Code of Delivery" id="zipcode">
+					</div>
+					<div class="col-md-6 col-md-offset-3">
+					<button type="submit" class="btn btn-default submit-btn" ng-click="submit()">Submit</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-sm-12 text-center">
+				<h5 class="share-txt">Care to share?</h5>
+				<div class="social-box">
+					<i class="flaticon-link23 social-icon"></i>
+					<i class="flaticon-facebook55 social-icon"></i>
+					<i class="flaticon-pinterest27 social-icon"></i>
+					<i class="flaticon-twitter1 social-icon"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 </div>

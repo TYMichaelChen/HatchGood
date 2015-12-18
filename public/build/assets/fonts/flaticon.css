@@ -18,21 +18,24 @@ font-style: normal;
 .flaticon-close33:before {
 	content: "\e001";
 }
-.flaticon-facebook55:before {
+.flaticon-cross31:before {
 	content: "\e002";
 }
-.flaticon-instagram12:before {
+.flaticon-facebook55:before {
 	content: "\e003";
 }
-.flaticon-link23:before {
+.flaticon-instagram12:before {
 	content: "\e004";
 }
-.flaticon-pinterest27:before {
+.flaticon-link23:before {
 	content: "\e005";
 }
-.flaticon-right127:before {
+.flaticon-pinterest27:before {
 	content: "\e006";
 }
-.flaticon-twitter1:before {
+.flaticon-right127:before {
 	content: "\e007";
+}
+.flaticon-twitter1:before {
+	content: "\e008";
 }
