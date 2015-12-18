@@ -4,7 +4,8 @@
   "description": "Furniture and Design",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "postinstall": "./node_modules/bower/bin/bower install"
   },
   "dependencies": {
     "ejs": "^2.3.1",
