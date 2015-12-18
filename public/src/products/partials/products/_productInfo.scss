@@ -1,6 +1,6 @@
-$sidebar-width: 320px!important;
+$sidebar-width: 340px!important;
 .scrolledStyle{
-	margin-top: 490px;	
+	margin-top: 390px;	
 	position:static;
 	width:$sidebar-width;
 }
@@ -11,7 +11,7 @@ $sidebar-width: 320px!important;
 	min-height: 250px;
 	width:23%;
 	.price-box{
-		padding: 80px 0px 0px 0px;
+		padding: 60px 0px 0px 0px;
 		.msrp-txt{
 			color:$gray;
 			font-size: 14px;

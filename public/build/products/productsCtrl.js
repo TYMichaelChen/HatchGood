@@ -20,13 +20,13 @@ angular.module('productCtrl', [])
 	    }
 	];
 	$scope.gallery = [
-        {thumb: '../assets/images/product/pendant/1.jpg', img: '../assets/images/product/pendant/1.jpg', description: 'Image 1'},
-        {thumb: '../assets/images/product/pendant/2.jpg', img: '../assets/images/product/pendant/2.jpg', description: 'Image 2'},
-	    {thumb: '../assets/images/product/pendant/3.jpg', img: '../assets/images/product/pendant/3.jpg', description: 'Image 3'},
-        {thumb: '../assets/images/product/pendant/4.jpg', img: '../assets/images/product/pendant/4.jpg', description: 'Image 4'},
-        {thumb: '../assets/images/product/hedge.jpg', img: '../assets/images/product/pendant/hedge.jpg', description: 'Image 5'},
-        {thumb: '../assets/images/product/kinema.jpg', img: '../assets/images/product/pendant/kinema.jpg', description: 'Image 6'},
-    ];
+    {thumb: '../assets/images/product/pendant/1.jpg', img: '../assets/images/product/pendant/1.jpg', description: 'Image 1'},
+    {thumb: '../assets/images/product/pendant/2.jpg', img: '../assets/images/product/pendant/2.jpg', description: 'Image 2'},
+    {thumb: '../assets/images/product/pendant/3.jpg', img: '../assets/images/product/pendant/3.jpg', description: 'Image 3'},
+    {thumb: '../assets/images/product/pendant/4.jpg', img: '../assets/images/product/pendant/4.jpg', description: 'Image 4'},
+    {thumb: '../assets/images/product/pendant/5.jpg', img: '../assets/images/product/pendant/5.jpg', description: 'Image 5'},
+    {thumb: '../assets/images/product/pendant/6.jpg', img: '../assets/images/product/pendant/6.jpg', description: 'Image 6'},
+  ];
 
     $scope.accordionStatus = {
     	description:true,
