@@ -1,13 +1,28 @@
-#suggestInfo-container{
-	padding-top: $navbar-height;
-	.jumbotron{
-		padding:150px 0;
-		text-align: center;
+.suggestInfo-jumbotron{	
+	background: url(../assets/images/bg1.jpg) no-repeat 75% 105% fixed; 
+	background-size: cover;
+	height: 450px;
+	.jumbo-container{
+		width:100%;
+		margin:0 auto;
+		text-align:center;
 		.title-txt{
 			@extend .playfair;
-			margin-bottom: 20px;
+			font-size: 40px;
+			margin-top:70px;
 		}
+		.credit-box{
+			margin: 200px 5px 0 0;
+			bottom:0;
+			text-align: right;
+			h6{
+				font-size: 9px;
+			}
+		}	
 	}
+}
+#suggestInfo-container{
+	padding-top: $navbar-height;
 	.suggest-info-box{
 		padding:50px 0 100px 0;
 		width:50%;
@@ -18,11 +33,15 @@
 		}	
 		.form-group{
 			margin-top: 15px;
+			label{
+				font-weight: normal;
+			}
 		}
 		.submit-btn-box{
 			margin-top:30px;
 			text-align: right;
 			.submit-btn{
+				font-size: 15px;
 				background-color:$black;
 			}
 		}

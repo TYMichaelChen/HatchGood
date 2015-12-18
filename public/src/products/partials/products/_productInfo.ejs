@@ -1,38 +1,42 @@
-<div class="sidebar-nav-fixed pull-right container-fluid affix">
-	<div class="row">
-		<div class="col-md-12 price-box">									
-			<h5 class="price-txt">$249.00</h5>					
-			<h6 class="shipping-txt">+shipping</h6>
-			<h6 class="msrp-txt"><span class="msrp">MSRP</span><strike>$210</strike></h6>	
-		</div>
-		<div class="col-md-12">									
-			<!--slider-->
-			<div class="amount-box">
+<div id='sidebar' sidebar class="sidebar-nav-fixed">
+	<div ng-class="scrolledChange ? 'sidebar-box scrolledStyle' :'sidebar-box affix' ">
+		<div class="row">
+			<div class="col-md-12 price-box">									
+				<h4 class="price-txt" ng-class="{min:boolChangeClass}">$249.00</h4>					
+				<h5 class="shipping-txt">+shipping</h5>
+				<h5 class="msrp-txt"><span class="msrp">MSRP</span><strike>$210</strike></h5>	
 			</div>
-			<div class="quantity-box">
-				<h6>19 more!</h6>
-				<h6 class="order-txt">1 of 20 minimum orders met</h6>
-				<h6 class="days-txt">60 days left</h6>
-				<div class="clear-float"></div>
+			<div class="col-md-12 progress-box">									
+				<!--slider-->
+
+				<div ng-if="progress.value" class="arrow_box" style="margin-left:{{progress.percent}}%">{{progress.value}} <br>committed</div>
+				<uib-progressbar max="progress.max" value="progress.value">
+				</uib-progressbar>
+				<div class="quantity-box">
+					<h6>19 more!</h6>
+					<h6 class="order-txt">1 of 20 minimum orders met</h6>
+					<h6 class="days-txt">60 days left</h6>
+					<div class="clear-float"></div>
+				</div>
 			</div>
-		</div>
-		<div class="col-md-12 btn-box">
-			<button class="btn btn-default add-btn" type="submit">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</button>
-			<button class="btn btn-default hatch-btn" type="submit">Hatch it!</button>
-		</div>
-		<div class="col-md-12 more-box">
-			<h6>More designs by Cora Neil</h6>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="product-box">
+			<div class="col-md-12 btn-box">
+				<button class="btn btn-default add-btn" type="submit">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</button>
+				<button class="btn btn-default hatch-btn" type="submit">Hatch it!</button>
+			</div>
+			<div class="col-md-12 more-box">
+				<h5>More designs by Cora Neil</h5>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="product-box">
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="product-box">
+					<div class="col-md-4">
+						<div class="product-box">
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="product-box">
+					<div class="col-md-4">
+						<div class="product-box">
+						</div>
 					</div>
 				</div>
 			</div>

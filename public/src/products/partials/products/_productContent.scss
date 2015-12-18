@@ -1,15 +1,16 @@
 .content-box{
 	.see-box{
 		.see-all-txt{
-			font-size: 16px;
+			font-size: 15px;
 			color:$black;
 			text-decoration: underline;
 		}
 	}
 	.product-desc-box{
-		margin-top: 50px;	
+		margin-top: 30px;	
 		.product-title-txt{
-			color:$black;		
+			color:$black;	
+			font-weight: bold;	
 		}
 		.product-author-txt{
 			margin-left: 5px;
@@ -37,19 +38,85 @@
 			}
 		}
 	}
+	.photos-box{
+		.photos-gallery{
+			margin-top: 10px;
+		}
+		.photos-plus-txt{
+			background:$lt-gray;
+			color:$black;
+			padding:18px 22px 18px 20px;
+			line-height: 4em;
+			cursor:pointer;
+		}
+	}
+	.social-box{
+		margin-top: 30px;
+		text-align: right;
+		.footer-social{
+			margin-right: 20px;
+			font-size: 16px;
+			color:$gray;
+		}
+	}
 	.nav-tab-box{
-		margin-top:50px;
-		.active{
+		margin-top:30px;
+		.tab-txt{
+			font-weight: bold;
+			cursor:pointer;
+		}
+		.tab-active{
 			text-decoration: underline;
 		}
 	}
-	.more-info-box{
-		margin-top:50px;
-		.insta-box{
-			width:95%;
-			margin:0 auto;
-			height:300px;
-			background-color: $gray;
+	.accordion-box{
+		.panel-body, .panel-collapse, .panel{
+			box-shadow: none;
+			background-color: $lt-blue;
+			border:none;
+			border-radius: 0;
+		}
+		.panel-heading{
+			border:0;
+			padding:0;
+			margin-top: 25px;
+			background-color: $lt-blue;
+		}
+		.accordion-desc{
+			padding-left: 5px;
+		}
+		.accordion-img-box{
+			margin-top: 20px;	
+			.accordion-img-place{
+				float:left;
+				width:30%;
+				height:150px;
+				margin-right: 40px;
+				background-color: $gray;
+			}
+		}
+	}
+	.comments-box{
+		.comment-txtbox{
+			margin-top:30px;
+			border:1px solid $yellow;
+			resize: none;
+		}
+		.ask-btn{
+			background-color: $d-gray;
+			border:1px solid $d-gray;
+			color:$white;
+			padding:8px 18px;
+			margin-top: 20px;
+		}
+		.comments-disp-box{
+			margin-top: 70px;
+			.desc{
+				margin-top: 40px;
+			}
+			.author{
+				color:$d-gray;
+			}
 		}
 	}
 }

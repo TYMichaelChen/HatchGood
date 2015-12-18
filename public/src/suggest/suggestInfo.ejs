@@ -1,4 +1,43 @@
 <div id="suggestInfo-container" ng-controller="suggestInfoController">
-		<% include partials/suggestInfo/_suggestInfoJumbo.ejs%>
-		<% include partials/suggestInfo/_suggestInfoForm.ejs%>
+	<div class="jumbotron suggestInfo-jumbotron">
+		<div class="container jumbo-container">
+			<h2 class="title-txt">Let us know more about the product and its designer.</h2>
+		</div>
+	</div>
+	<div class="suggest-info-box">
+		<div class="row">
+			<div class="col-md-10">
+				<h4 class="suggest-desc-text">If we see enough interest, we will personally reach out to the designer/distributor to help bring their product to you.</h4>
+			</div>
+			<form>
+				<div class="col-md-6">							
+					<div class="form-group">
+						<label for="productName">Product name</label>
+						<input type="text" class="form-control" id="productName" placeholder="">
+					</div>
+				</div>
+				<div class="col-md-6">							
+					<div class="form-group">
+						<label for="designerName">Designer's name</label>
+						<input type="text" class="form-control" name="designerName" placeholder="">
+					</div>
+				</div>
+				<div class="col-md-12">							
+					<div class="form-group">
+						<label for="webLink">Web link of the product</label>
+						<input type="text" class="form-control" name="webLink" placeholder="">
+					</div>
+				</div>	
+				<div class="col-md-12">							
+					<div class="form-group">
+						<label for="tag">Tag to describe the product</label>
+						<input type="text" class="form-control" name="tag" placeholder="">
+					</div>
+				</div>					
+				<div class="col-md-4 col-md-offset-8 submit-btn-box">
+					<button class="btn btn-primary btn-lg submit-btn">Submit Suggestion</button>
+				</div>
+			</form>
+		</div>
+	</div>
 </div>

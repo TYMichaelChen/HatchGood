@@ -3,6 +3,7 @@ angular.module('HatchGood', [
 	'ngAnimate',
 	'ui.bootstrap',
 	'appRoutes', 
+	'jkuri.gallery',
 	'homeCtrl',
 	'productListCtrl',
 	'productCtrl',

@@ -4,7 +4,7 @@
 	.product-container{
 		width:100%;
 		margin:$navbar-height auto 0 auto;
-		padding:50px 36px;
+		padding:30px 36px;
 		.product-row-top{
 			padding:0px 15px;
 			@import 'partials/products/productContent';
@@ -16,7 +16,7 @@
 				display: block;
 				position: absolute;
 				font-size: 30px;
-				left:30%;
+				left:10%;
 				top:50%;
 				color:#000;
 			}
@@ -24,13 +24,13 @@
 				display: block;
 				position: absolute;
 				font-size: 30px;
-				left:30%;
+				left:50%;
 				top:50%;
 				color:#000;
 			}
 		}
 		.product-row-bot{
-			padding:0px 36px;
+			padding:0px 36px 80px 0px;
 			.like-box{
 				width:100%;
 				text-align: center;
@@ -41,7 +41,7 @@
 						width:95%;
 						margin:0 auto;
 						background-color: $gray;
-						height:300px;
+						height:200px;
 					}
 				}
 			}

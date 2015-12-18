@@ -1,14 +1,28 @@
-#suggest-container{
-	padding-top: $navbar-height;
-	.jumbotron{
-		padding:120px 0;
-		text-align: center;
+.suggest-jumbotron{	
+	background: url(../assets/images/bg2.jpg) no-repeat 75% 110% fixed; 
+	background-size: cover;
+	height: 450px;
+	.jumbo-container{
+		width:100%;
+		margin:0 auto;
+		text-align:center;
 		.title-txt{
 			@extend .playfair;
-			margin-bottom: 20px;
-			line-height: 1.5em;
+			font-size: 40px;
+			margin-top:70px;
 		}
+		.credit-box{
+			margin: 200px 5px 0 0;
+			bottom:0;
+			text-align: right;
+			h6{
+				font-size: 9px;
+			}
+		}	
 	}
+}
+#suggest-container{
+	padding-top: $navbar-height;
 	.suggest-product-container{
 		width:100%;
 		padding:40px 10%;

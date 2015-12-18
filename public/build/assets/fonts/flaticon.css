@@ -15,18 +15,24 @@ font-style: normal;
 }.flaticon-back28:before {
 	content: "\e000";
 }
-.flaticon-facebook55:before {
+.flaticon-close33:before {
 	content: "\e001";
 }
-.flaticon-instagram12:before {
+.flaticon-facebook55:before {
 	content: "\e002";
 }
-.flaticon-pinterest27:before {
+.flaticon-instagram12:before {
 	content: "\e003";
 }
-.flaticon-right127:before {
+.flaticon-link23:before {
 	content: "\e004";
 }
-.flaticon-twitter1:before {
+.flaticon-pinterest27:before {
 	content: "\e005";
+}
+.flaticon-right127:before {
+	content: "\e006";
+}
+.flaticon-twitter1:before {
+	content: "\e007";
 }

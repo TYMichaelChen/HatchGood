@@ -11,8 +11,8 @@
 		</div>
 		<div class="col-md-12">
 			<div class="product-desc-box">
-				<h3 class="product-title-txt">Hedge Pendant Pair in Fig</h3>
-				<h4 class="product-author-txt">by <a href="#" class="author-txt">Cora Neil</a></h3>
+				<h2 class="product-title-txt">Hedge Pendant Pair in Fig </h2>
+				<h4 class="product-author-txt">by <a href="#" class="author-txt">Cora Neil</a></h4>
 			</div>
 		</div>
 		<div class="col-md-12">
@@ -28,115 +28,142 @@
 </div>
 			</div>
 		</div>
-		<div class="col-md-12">
-			<div class="nav-tab-box">
-				<div class="row">
-					<div class="col-md-2">
-						<h4 class="active">Design Specifics</h4>
-					</div>
-					<div class="col-md-2">
-						<h4 class="">Comments (29)</h4>
-					</div>
-					<div class="col-md-2">
-						<h4 class="">Updates (3)</h4>
-					</div>
-				</div>
+		<div class="col-md-9">
+			<div class="photos-box">
+				<ng-gallery images="gallery" thumbs-num="{{gallery.length}}">
+				</ng-gallery>
 			</div>
 		</div>
-		<div class="col-md-12">
-			<div class="more-info-box">
-				<h3><span class="glyphicon glyphicon-chevron-down"></span>&nbsp;&nbsp;As Seen on Instagram</h3>
-				<div class="row" >
-					<div class="col-md-3">
-						<div class="insta-box">
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="insta-box">
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="insta-box">
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="insta-box">
-						</div>
-					</div>
-				</div>
+		<div class="col-md-3">
+			<div class="social-box">
+				 <i class="flaticon-link23 footer-social"></i>
+				 <i class="flaticon-facebook55 footer-social"></i>
+				 <i class="flaticon-pinterest27 footer-social"></i>
+				 <i class="flaticon-twitter1 footer-social"></i>
 			</div>
 		</div>
 		<div class="col-md-12"  id="affix-stop">
-			<div class="more-info-box">
-				<h3><span class="glyphicon glyphicon-chevron-down"></span>&nbsp;&nbsp;Product Description</h3>
-				<h4>Fin is a floor lamp that uses a reflecting plane and high lumen LEDs to create approachable indirect light and functional birght light, simultaneously</h4>
+			<div class="nav-tab-box">
 				<div class="row">
-					<div class="col-md-3">
-						<div class="insta-box">
-						</div>
+					<div class="col-md-2">
+						<h3 ng-class="tab ? 'tab-active tab-txt' : 'tab-txt'" ng-click="tab = true">Design Specifics</h3>
 					</div>
-					<div class="col-md-3">
-						<div class="insta-box">
-						</div>
+					<div class="col-md-2">
+						<h3 ng-class="!tab ? 'tab-active tab-txt' : 'tab-txt'" ng-click="tab = false">Updates (3)</h3>
 					</div>
-					
 				</div>
 			</div>
 		</div>
-		<div class="col-md-12" >
-			<div class="more-info-box">
-				<h3><span class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Materials and Dimension</h3>
+		<div ng-show="tab">
+			<div class="col-md-12 accordion-box">
+				<uib-accordion close-others="false">
+					<uib-accordion-group heading="Product Description" is-open="accordionStatus.description">
+						<uib-accordion-heading>
+							<span ng-class="accordionStatus.description ? 'glyphicon glyphicon-chevron-down' : 'glyphicon glyphicon-chevron-right'"></span> Product Description
+						</uib-accordion-heading>
+						<div class="row">
+							<div class="col-md-11">
+								<h4 >Each planter is crafted in Los Angeles from welded steel wire and is powder coated to bring a vibrant, graphic look to your garden. Each BEATRIX planter comes with matching powder coated hanging hardware and an insert made from organic coco-mat (made from organic latex and coconut husk) to provide support and excellent drainage for your plants.<br><br>*plants not included</h4>
+							</div>	
+							<div class="col-md-12 accordion-img-box">
+								<div class="accordion-img-place" style="width:200px">
+								</div>
+								<div class="accordion-img-place" style="width:400px">
+								</div>
+							</div>	
+						</div>
+				    </uib-accordion-group>
+				    <uib-accordion-group heading="Product Description" is-open="accordionStatus.material">
+						<uib-accordion-heading>
+							<span ng-class="accordionStatus.material ? 'glyphicon glyphicon-chevron-down' : 'glyphicon glyphicon-chevron-right'"></span> Materials and Dimensions
+						</uib-accordion-heading>
+						<div class="row">
+							<div class="col-md-11">
+								<h4 class="accordion-desc">Materials and Dimensions Description.......</h4>
+							</div>	
+						</div>
+				    </uib-accordion-group>
+				    <uib-accordion-group heading="Product Description" is-open="accordionStatus.source">
+						<uib-accordion-heading>
+								<span ng-class="accordionStatus.source ? 'glyphicon glyphicon-chevron-down' : 'glyphicon glyphicon-chevron-right'"></span> Manufacturing Source
+						</uib-accordion-heading>
+						<div class="row">
+							<div class="col-md-11">
+								<h4 class="accordion-desc">Manufacturing Source Description.......</h4>
+							</div>	
+						</div>
+				    </uib-accordion-group>
+				    <uib-accordion-group heading="Product Description" is-open="accordionStatus.ship">
+						<uib-accordion-heading>
+							<span ng-class="accordionStatus.ship ? 'glyphicon glyphicon-chevron-down' : 'glyphicon glyphicon-chevron-right'"></span> Ship Out Timeline
+						</uib-accordion-heading>
+						<div class="row">
+							<div class="col-md-11">
+								<h4 class="accordion-desc">Ship Out Timeline Description.......</h4>
+							</div>	
+						</div>
+				    </uib-accordion-group>
+				</uib-accordion>
 			</div>
 		</div>
-		<div class="col-md-12">
-			<div class="more-info-box">
-				<h3><span class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Manufacturing Source</h3>
-			</div>
-		</div>
-		<div class="col-md-12">
-			<div class="more-info-box">
-				<h3><span class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Ship Out Timeline</h3>
+		<div ng-show="!tab">
+			<div class="col-md-12 comments-box">
+				<textarea class="form-control comment-txtbox" placeholder="Type your comments here." rows="8"></textarea>
+				<button class="btn btn-default pull-right ask-btn" type="submit">Ask!</button>
+				<div class="comments-disp-box">
+					<h4 class="desc">“Where is a light source coming from? What kind of light bulb does it use? “</h4>
+					<h4 class="author">Stella on October 29th, 2015</h4>
+
+					<h4 class="desc">What kind of paint is used on the beam of the stand?</h4>
+					<h4 class="author">Stella on October 28th, 2015</h4>
+					<h4 class="desc">What kind of paint is used on the beam of the stand?</h4>
+					<h4 class="author">Stella on October 27th, 2015</h4>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 			</div>
 			<div class="col-md-3">
-				<div class="sidebar-nav-fixed pull-right container-fluid affix">
-	<div class="row">
-		<div class="col-md-12 price-box">									
-			<h5 class="price-txt">$249.00</h5>					
-			<h6 class="shipping-txt">+shipping</h6>
-			<h6 class="msrp-txt"><span class="msrp">MSRP</span><strike>$210</strike></h6>	
-		</div>
-		<div class="col-md-12">									
-			<!--slider-->
-			<div class="amount-box">
+				<div id='sidebar' sidebar class="sidebar-nav-fixed">
+	<div ng-class="scrolledChange ? 'sidebar-box scrolledStyle' :'sidebar-box affix' ">
+		<div class="row">
+			<div class="col-md-12 price-box">									
+				<h4 class="price-txt" ng-class="{min:boolChangeClass}">$249.00</h4>					
+				<h5 class="shipping-txt">+shipping</h5>
+				<h5 class="msrp-txt"><span class="msrp">MSRP</span><strike>$210</strike></h5>	
 			</div>
-			<div class="quantity-box">
-				<h6>19 more!</h6>
-				<h6 class="order-txt">1 of 20 minimum orders met</h6>
-				<h6 class="days-txt">60 days left</h6>
-				<div class="clear-float"></div>
+			<div class="col-md-12 progress-box">									
+				<!--slider-->
+
+				<div ng-if="progress.value" class="arrow_box" style="margin-left:{{progress.percent}}%">{{progress.value}} <br>committed</div>
+				<uib-progressbar max="progress.max" value="progress.value">
+				</uib-progressbar>
+				<div class="quantity-box">
+					<h6>19 more!</h6>
+					<h6 class="order-txt">1 of 20 minimum orders met</h6>
+					<h6 class="days-txt">60 days left</h6>
+					<div class="clear-float"></div>
+				</div>
 			</div>
-		</div>
-		<div class="col-md-12 btn-box">
-			<button class="btn btn-default add-btn" type="submit">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</button>
-			<button class="btn btn-default hatch-btn" type="submit">Hatch it!</button>
-		</div>
-		<div class="col-md-12 more-box">
-			<h6>More designs by Cora Neil</h6>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="product-box">
+			<div class="col-md-12 btn-box">
+				<button class="btn btn-default add-btn" type="submit">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</button>
+				<button class="btn btn-default hatch-btn" type="submit">Hatch it!</button>
+			</div>
+			<div class="col-md-12 more-box">
+				<h5>More designs by Cora Neil</h5>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="product-box">
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="product-box">
+					<div class="col-md-4">
+						<div class="product-box">
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="product-box">
+					<div class="col-md-4">
+						<div class="product-box">
+						</div>
 					</div>
 				</div>
 			</div>
