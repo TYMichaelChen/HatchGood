@@ -1,0 +1,23 @@
+<div class="{{ baseClass }} photos-gallery"> 
+  <div ng-repeat="i in images"> 
+    <img ng-if="$index<=3" ng-src="{{ i.thumb }}" class="{{ thumbClass }}" ng-click="openGallery($index)" alt="Image {{ $index + 1 }}" /> 
+    <span ng-if="images.length >4 && $index==3" ng-click="openGallery($index)" class="photos-plus-txt">+{{images.length-4}}</span> 
+  </div> 
+</div> 
+<div class="ng-overlay" ng-show="opened"> 
+</div> 
+<div class="ng-gallery-content" ng-show="opened"> 
+  <div class="uil-ring-css" ng-show="loading"><div></div></div>  
+  <a class="close-popup" ng-click="closeGallery()"><i class="flaticon-close33"></i></a> 
+  <a class="nav-left" ng-click="prevImage()"><i class="flaticon-back28"></i></a> 
+  <img ng-src="{{ img }}" ng-click="nextImage()" ng-show="!loading" class="effect" /> 
+  <a class="nav-right" ng-click="nextImage()"><i class="flaticon-right127"></i></a> 
+  <span class="info-text">{{ index + 1 }}/{{ images.length }} - {{ description }}</span> 
+  <div class="ng-thumbnails-wrapper"> 
+    <div class="ng-thumbnails slide-left"> 
+      <div ng-repeat="i in images">  
+        <img ng-src="{{ i.thumb }}" ng-class="{\active\: index === $index}" ng-click="changeImage($index)" /> 
+      </div> 
+    </div> 
+  </div> 
+</div>

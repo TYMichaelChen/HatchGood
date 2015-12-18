@@ -56,12 +56,18 @@ angular.module('productCtrl', [])
 })
 //Override UI Bootstrap Carousel Directive's Template
 .config(['$provide', Decorate]);
-function Decorate($provide) {
-$provide.decorator('uibCarouselDirective', function($delegate) {
-  var directive = $delegate[0];  
-  directive.templateUrl = "products/partials/products/carousel.tpl.html";
-  
-  return $delegate;
-});
+  function Decorate($provide) {
+  $provide.decorator('ngGalleryDirective', function($delegate) {
+    var directive = $delegate[0];  
+    directive.templateUrl = "products/partials/products/gallery.tpl.html";
+    
+    return $delegate;
+  });
+  $provide.decorator('uibCarouselDirective', function($delegate) {
+    var directive = $delegate[0];  
+    directive.templateUrl = "products/partials/products/carousel.tpl.html";
+    
+    return $delegate;
+  });
 }
   
