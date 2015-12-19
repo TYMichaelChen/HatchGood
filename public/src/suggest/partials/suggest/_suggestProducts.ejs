@@ -1,8 +1,28 @@
 <div class="suggest-product-container">
-	<%include _suggestProductTop.ejs%>
+	<div class="row top-bar">
+		<div class="col-md-4">
+			<div class="dropdown">
+				<button id="sort-btn" class="btn btn-default dropdown-toggle drop-btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				<span class="sort-txt">Sort by</span>
+					<span class="caret"></span>
+				</button>
+					<ul data-name="sort" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						<li><a href="#">earliest ship date</a></li>
+						<li><a href="#">most hatched</a></li>
+						<li><a href="#">price: low-high</a></li>
+						<li><a href="#">price: high-low</a></li>
+						<li><a href="#">time: newest listed</a></li>
+						<li><a href="#">time: ending soonest</a></li>
+					</ul>
+			</div>
+		</div>
+		<div class="col-md-2 col-md-offset-6 suggest-box">			
+			<button class="btn btn-default make-btn btn-dark" type="submit">Make A Suggestion</button>
+		</div>
+	</div>
 	<div class="row products-box">
-		<div class="col-md-4" style="margin:0; padding:0">
-			<div class="row" style="margin:0">
+		<div class="col-md-4">
+			<div class="row">
 				<div class="col-xs-12" >
 					<div class="product-div">
 						<div class="img-box" style="height:250px;">

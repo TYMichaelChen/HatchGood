@@ -25,23 +25,44 @@
 	padding-top: $navbar-height;
 	.suggest-product-container{
 		width:100%;
-		padding:40px 10%;
-		.top-bar{
-			margin:0; //fix
-			margin-bottom: 100px;
-			padding:0;
-			.sort-txt{
-				margin-right:50px;
+		padding:20px 72px 80px 72px;
+		.sort-txt{
+			margin-right:50px;
+		}
+		.suggest-box{
+			text-align: right;
+			.make-btn{
+				padding-left: 20px;
+				padding-right: 20px;
 			}
-			.suggest-box{
-				text-align: right;
-				.make-btn{
-					padding-left: 20px;
-					padding-right: 20px;
+		}		
+		.product-box{
+			border-radius: 4px;
+			border:1px solid $gray;
+			padding:8px 10px;
+			margin-top:20px;
+			.img-box{
+				height:200px;
+				width:100%;
+				margin:0 auto;
+				background-color: $gray;
+			}			
+			.content-box{
+				margin:0;
+				padding:10px 0px;
+				.votes-box{
+					margin-left:10px;
+					.thumbs-icon{
+						font-size: 18px;
+					}
+					h4{
+						margin:0;
+					}
+				}
+				.txt-box{
 				}
 			}
-		}
-
+		}	
 		.product-div{
 			width:100%;
 			background-color: $white;

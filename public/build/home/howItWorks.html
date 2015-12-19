@@ -1,44 +1,67 @@
 <div id="howworks-container" ng-controller="howItWorksController">
-		<div class="row">
-			<div class="col-md-12">
-				<h4 class="hatch-txt"> Hatch a Design!</h4>
-			</div>
-			<div class="col-md-12 toggle-box">
-				<div class="btn-group" role="group" aria-label="...">
-				  <button type="button" class="btn btn-default btn-toggle toggle-active">New Designs</button>
-				  <button type="button" class="btn btn-default btn-toggle">Existing Designs</button>
-				</div>
-			</div>
-			<div class="col-md-12 new-design-box">
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="design-box">
-							<div class="design-imgbox">
-							</div>
-						</div>
-						<div class="text-box">
-							<h5 class="desc-txt">1. In order to provide goods at reasonable costs, our designers give us the minimum number of orders required before they can begin manufacturing.</h5>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="design-box">
-							<div class="design-imgbox">
-							</div>
-						</div>
-						<div class="text-box">
-							<h5 class="desc-txt">2. Our community of design enthusiasts join to help hatch the product by meeting the designer's minimum order.</h5>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="design-box">
-							<div class="design-imgbox">
-							</div>
-						</div>
-						<div class="text-box">
-							<h5 class="desc-txt">3. Once the minimum order is met, our designers go into manufacturing and prepare to ship the goods to you.</h5>
-						</div>
-					</div>
-				</div>
+	<div class="padding-how">
+		<div id="howworks-container" ng-controller="howItWorksController">
+	<div class="row title-box">
+		<div class="col-sm-12">
+			<h3 class="title-txt">How Does Hatch Work?</h3>
+		</div>	
+	</div>
+	<div clas="row">
+		<div class="col-sm-12 toggle-btn-box">
+			<div class="btn-group">
+				<button type="button" ng-class="toggleHowBtn ? 'btn active-toggle' : 'btn toggle-btn'" ng-click="toggleHowBtn=true">New Designs</button>
+				<button type="button" ng-class="toggleHowBtn ? 'btn toggle-btn': 'btn active-toggle'" ng-click="toggleHowBtn=false">Existing Designs</button>
 			</div>
 		</div>
+	</div>
+	<div ng-if="toggleHowBtn" class="row detail-box">
+		<div class="col-sm-4">
+			<div class="design-box">
+				<div class="design-imgbox">
+				</div>
+			</div>
+			<div class="howdesc-box">
+				<span class="num-txt">1</span>
+				<h5 class="desc-txt">Our designer provides us information about his/her product and the minimum # of orders required to unlock the discounted group-order price.</h5>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="design-box">
+				<div class="design-imgbox">
+				</div>
+			</div>
+			<div class="howdesc-box">
+				<span class="num-txt">2</span>
+				<h5 class="desc-txt">Our community of design enthusiasts, one by one, commit to buying the product, and collectively hatch the product by meeting its minimum order.</h5>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="design-box">
+				<div class="design-imgbox">
+				</div>
+			</div>
+			<div class="howdesc-box">
+				<span class="num-txt">3</span>
+				<h5 class="desc-txt">Once the minimum order is met, our designer go into manufacturing and prepare to ship the goods to you.</h5>
+			</div>
+		</div>
+	</div>
+	<div ng-if="!toggleHowBtn" class="row detail-box">
+		<div class="col-sm-12">
+			<div class="design-box">
+				<div class="design-imgbox">
+				</div>
+			</div>
+			<div class="howdesc-box">
+				<span class="text-center">Existing Design Description...</span>
+			</div>
+		</div>
+	</div>
+	<div class="row btn-box">
+		<div class="col-md-4 col-md-offset-4">
+			<a class="btn btn-primary" href="#" role="button">Ask More Questions</a>
+		</div>
+	</div>
+</div>
+	</div>
 </div>
