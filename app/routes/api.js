@@ -1,19 +1,15 @@
 var express = require('express'),
 	passport = require('passport'),
-	User = require('../models/user'),
+	userController = require('../routes/user'),
 	path = require('path');
 
 module.exports = function(app){
 	//===================== Server Routes =====================
-	app.get('/api/users', function(req,res){
-		User.find(function(err,users){
-			if(err) res.send(err);
-			res.json(users);
-		})
-	});
+	var router = express.Router();
 
-	app.get('*',function(req,res){
-		res.sendFile('build/index.html',{root:'public/'});
-	})
+	router.route('/users')
+		.get(userController.getUsers)
+		.post(userController.postUsers);
 
+	app.use('/api/v1',router); // configure our routes
 }

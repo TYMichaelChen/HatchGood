@@ -7,7 +7,7 @@ var express = require('express'),
 var app = express();
 
 //===================== Config =====================
-// var db = require('./config/db');
+var db = require('./config/db');
 
 app.use(bodyParser.json()); 
 app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse application/vnd.api+json as json
@@ -17,7 +17,9 @@ app.use(methodOverride('X-HTTP-Method-Override')); // override with the X-HTTP-M
 //===================== Routes =====================
 
 var routes = require('./app/routes/api.js')(app); // configure our routes
-
+app.get('*',function(req,res){
+	res.sendFile('build/index.html',{root:'public/'});
+});
 //===================== Start ======================
 app.set('port', (process.env.PORT || 5000));
 app.listen(app.get('port'), function() {

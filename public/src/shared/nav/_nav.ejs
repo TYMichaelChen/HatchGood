@@ -17,17 +17,13 @@
 			<li><a href="/how">How It Works</a></li>
 			<li><a href="/products/chair">Shop</a></li>
 			<li><a href="/sell">Sell</a></li>
-			<li><a href="/suggest">Suggest</a></li>
+			<li><a ng-click="openPasswordModal()">Suggest</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a></li>
-			<li><a href="#" data-toggle="modal" data-target="#loginModal">Log In</a></li>
+			<li><a href="#" ng-click="openSignupModal()">Sign Up</a></li>
+			<li><a href="#" ng-click="openLoginModal()">Log In</a></li>
 		</ul>
       
     </div>
   </div>
 </nav>
-
-<% include _signup.ejs %>
-<% include _login.ejs %>
-<% include _forgotPassword.ejs %>

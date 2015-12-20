@@ -45,15 +45,16 @@ angular.module('productCtrl', [])
   $scope.openHatchModal = function() {
     var modalInstance = $uibModal.open({
       animation: true,
-      templateUrl: 'products/partials/products/hatchModal.html',
-      controller: 'hatchModalCtrl',
+      templateUrl: 'shared/modals/hatchModal.html',
+      controller: 'hatchModalCtrl',      
+      windowClass: 'hatchModalWindow',
     });
   };
   $scope.openDesignerModal = function(id) {
 
     var modalInstance = $uibModal.open({
       animation: true,
-      templateUrl: 'products/partials/products/designerModal.html',
+      templateUrl: 'shared/modals/designerModal.html',
       controller: 'designerModalCtrl',      
       windowClass: 'designerModalWindow',
       resolve:{

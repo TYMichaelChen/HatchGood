@@ -1,6 +1,6 @@
-<div id="loginModal" class="modal fade loginSignModal" tabindex="-1" role="dialog" aria-labelledby="loginModal">
-  <div class="modal-dialog modal-md">
-    <div class="modal-content">
+<div class="modal-body">		
+	<span class="modal-close-btn pull-right flaticon-cross31" ng-click="close()"></span>
+	<div class="signupModal">
 		<div class="row">
 			<div class="col-sm-12">
 				<h4>Log In</h4>
@@ -19,7 +19,7 @@
 			</div>
 			<div class="form-group">
 				<div class="col-sm-12">
-					<h6 class="forgot-text"><a href="#" data-dismiss="modal" data-toggle="modal" data-target="#forgotModal">Forgot Password?</a></h6>
+					<h6 class="forgot-text"><a href="#" ng-click="openPasswordModal()">Forgot Password?</a></h6>
 				</div>
 			</div>
 			<div class="form-group">
@@ -43,6 +43,5 @@
 				</div>
 			</div>
 		</form>
-    </div>
-  </div>
+	</div>
 </div>

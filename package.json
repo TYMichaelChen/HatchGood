@@ -8,6 +8,7 @@
     "postinstall": "./node_modules/bower/bin/bower install"
   },
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "~1.4.2",
     "bower": "^1.7.1",
     "ejs": "^2.3.1",

@@ -15,7 +15,7 @@ var ejs = require('gulp-ejs');
 var paths = {
     sass:['./public/src/**/*.scss'],
     ejs:['./public/src/**/*.ejs'],
-    ejsSrc:['./public/src/**/*.ejs','!./public/src/shared/**/*.ejs','!./public/src/**/_*.ejs'],
+    ejsSrc:['./public/src/**/*.ejs','!./public/src/**/_*.ejs'],
     js:['./public/src/**/*.js','!./public/src/shared/**/*.js']
 }     
 
