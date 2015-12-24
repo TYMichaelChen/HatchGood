@@ -3,6 +3,7 @@ var express = require('express'),
 	userController = require('../routes/user'),
 	productController = require('../routes/product'),
 	suggestedController = require('../routes/suggestedProduct'),
+	purchaseController = require('../routes/purchase'),
 	path = require('path');
 
 module.exports = function(app){
@@ -20,6 +21,10 @@ module.exports = function(app){
 	router.route('/suggested')
 		.get(suggestedController.getSuggestedProducts)
 		.post(suggestedController.postSuggestedProducts);
+
+	router.route('/purchases')
+		.get(purchaseController.getPurchases)
+		.post(purchaseController.postPurchases);
 
 	app.use('/api/v1',router); // configure our routes
 }
