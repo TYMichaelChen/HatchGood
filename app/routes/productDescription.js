@@ -11,6 +11,7 @@ exports.postDescriptions = function(req, res){
 	var productDescription = new ProductDescription({
 		productID: req.body.productID,
 		tag: req.body.tag,
+		price: req.body.price,
 		minimum: req.body.minimum,
 		dueDate: req.body.dueDate,
 		description: req.body.description,
